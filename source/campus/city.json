@@ -1,0 +1,6951 @@
+{
+ "name": "Ole Miss",
+ "title": "University of Mississippi · Historic Core",
+ "region": "Oxford / University of Mississippi",
+ "place": "The Lyceum · The Circle · The Grove",
+ "timezone": "America/Chicago",
+ "level": 3.5,
+ "styles": {
+  "default": {
+   "facade": "brick",
+   "wall": [
+    "#b0785b",
+    "#b68063",
+    "#ac6d51"
+   ],
+   "levels": 3,
+   "floor": 4,
+   "roof": "auto",
+   "flatRoof": "#9c9f94",
+   "parapet": 0.6,
+   "rooftop": "none",
+   "shop": "none",
+   "bay": 3.8,
+   "trim": "#e5dfca",
+   "glass": [
+    "#9aaead",
+    "#a2b6b5"
+   ],
+   "awning": false,
+   "awnings": [
+    "#425d50",
+    "#a96350",
+    "#e6d5ac"
+   ],
+   "pitch": 22,
+   "roofColour": [
+    "#7a847b",
+    "#7a817c",
+    "#7e8277"
+   ],
+   "maxSpan": 32,
+   "rectFill": 0.65,
+   "arch": "campus-sash",
+   "windowGlass": "#526561"
+  },
+  "rules": [
+   {
+    "if": {
+     "maxArea": 30
+    },
+    "set": {
+     "levels": 1,
+     "shop": "none"
+    }
+   }
+  ]
+ },
+ "palette": {
+  "ground": "#b2bf92",
+  "road": "#a6a5a0",
+  "pavement": "#ded5be",
+  "walk": "#d9c9ac",
+  "grass": "#a8bb87",
+  "slab": "#c9b797",
+  "marking": "#f2e9ce",
+  "kerb": "#d8caad",
+  "paving": "#bbac91"
+ },
+ "paving": {
+  "style": "slabs",
+  "size": 0.65,
+  "colour": "#c5b89f"
+ },
+ "lamp": {
+  "colour": "#405b4b",
+  "height": 4.8,
+  "head": "#f2e3b6",
+  "auto": true
+ },
+ "shops": {
+  "signs": [
+   "BOOKS",
+   "COFFEE",
+   "GALLERY",
+   "DINER"
+  ],
+  "font": "Georgia,serif",
+  "fascias": [
+   "#39594f",
+   "#9f5948",
+   "#eee2c9"
+  ],
+  "awnings": [
+   "#49604b",
+   "#ad7560"
+  ]
+ },
+ "cafes": {
+  "umbrellas": [
+   "#e7dfc9",
+   "#46614f"
+  ],
+  "stripes": false,
+  "table": "#e3d1a8",
+  "chair": "#726045"
+ },
+ "trees": {
+  "default": {
+   "style": 3,
+   "colours": [
+    "#82966e",
+    "#a6b680",
+    "#91a477"
+   ],
+   "height": 11,
+   "autumn": "#bb8b52"
+  },
+  "rules": [
+   {
+    "match": "Canopy oak",
+    "vary": 0.0,
+    "mix": [
+     {
+      "style": 3,
+      "colours": [
+       "#7f9668",
+       "#8fa574"
+      ],
+      "autumn": "#b9773f",
+      "share": 6
+     },
+     {
+      "style": 2,
+      "colours": [
+       "#9db57c",
+       "#a9bd86"
+      ],
+      "autumn": "#d1a246",
+      "share": 3
+     }
+    ]
+   },
+   {
+    "match": "Shade tree",
+    "mix": [
+     {
+      "style": 3,
+      "colours": [
+       "#8ba672",
+       "#9cb07c"
+      ],
+      "autumn": "#c98a45",
+      "share": 4
+     },
+     {
+      "style": 1,
+      "colours": [
+       "#93ad79"
+      ],
+      "autumn": "#d6a84a",
+      "share": 3
+     },
+     {
+      "style": 2,
+      "colours": [
+       "#a3b983"
+      ],
+      "autumn": "#c66f3c",
+      "share": 2
+     }
+    ]
+   },
+   {
+    "match": "Young tree",
+    "mix": [
+     {
+      "style": 1,
+      "colours": [
+       "#9ab57e",
+       "#a9c088"
+      ],
+      "autumn": "#d19a45",
+      "share": 3
+     },
+     {
+      "style": 4,
+      "colours": [
+       "#8eaa76"
+      ],
+      "autumn": "#b85f3d",
+      "blossom": "#f2c4cf",
+      "share": 2
+     }
+    ]
+   },
+   {
+    "match": "Ornamental",
+    "style": 4,
+    "colours": [
+     "#93ad7a",
+     "#a2ba84"
+    ],
+    "autumn": "#b9583c",
+    "blossom": "#f0bccb",
+    "spring": "#d7e79b"
+   },
+   {
+    "match": "Evergreen",
+    "mix": [
+     {
+      "style": 3,
+      "colours": [
+       "#4f7558",
+       "#587f5f"
+      ],
+      "evergreen": true,
+      "share": 3
+     },
+     {
+      "style": 5,
+      "colours": [
+       "#4c6f57"
+      ],
+      "evergreen": true,
+      "share": 1
+     }
+    ]
+   }
+  ]
+ },
+ "people": {
+  "skin": [
+   "#e7bb96",
+   "#b98260",
+   "#7a5140",
+   "#cf9c75"
+  ],
+  "clothes": [
+   "#a7524c",
+   "#49647b",
+   "#ece2cf",
+   "#577b85",
+   "#caad7f"
+  ],
+  "pants": [
+   "#555a63",
+   "#526276",
+   "#a39b82"
+  ],
+  "hair": [
+   "#433b31",
+   "#806349",
+   "#c2a379"
+  ],
+  "umbrellas": [
+   "#ac5b50",
+   "#435e70"
+  ]
+ },
+ "vehicles": {
+  "kinds": [
+   "sedan",
+   "suv",
+   "pickup",
+   "hatch",
+   "van"
+  ],
+  "colours": [
+   "#e7e5dc",
+   "#526271",
+   "#a65043",
+   "#c2c3b8",
+   "#3d4e50",
+   "#9caaab"
+  ],
+  "plate": "#f4edda",
+  "taxi": null,
+  "frontPlate": null
+ },
+ "seasons": [
+  {
+   "id": "spring",
+   "label": "Spring",
+   "leaves": "spring",
+   "grass": "#adbf87",
+   "note": {
+    "text": "Mississippi’s spring brings a heightened threat of thunderstorms.",
+    "source": "Mississippi State Climatologist",
+    "url": "https://www.geosciences.msstate.edu/state-climatologist/mississippi-climate"
+   }
+  },
+  {
+   "id": "summer",
+   "label": "Summer",
+   "leaves": "summer",
+   "haze": true,
+   "grass": "#9aaf7a",
+   "note": {
+    "text": "Mississippi has long, hot summers and high humidity.",
+    "source": "Mississippi State Climatologist",
+    "url": "https://www.geosciences.msstate.edu/state-climatologist/mississippi-climate"
+   }
+  },
+  {
+   "id": "autumn",
+   "label": "Autumn",
+   "leaves": "autumn",
+   "grass": "#b6b284",
+   "note": {
+    "text": "The Grove’s canopy includes oaks, magnolias, and elms.",
+    "source": "The Cultural Landscape Foundation",
+    "url": "https://www.tclf.org/university-mississippi"
+   }
+  },
+  {
+   "id": "winter",
+   "label": "Winter",
+   "leaves": "bare",
+   "coats": true,
+   "cafes": false,
+   "note": {
+    "text": "Mississippi winters are temperate, with cold spells generally short.",
+    "source": "Mississippi State Climatologist",
+    "url": "https://www.geosciences.msstate.edu/state-climatologist/mississippi-climate"
+   }
+  }
+ ],
+ "months": [
+  "winter",
+  "winter",
+  "spring",
+  "spring",
+  "spring",
+  "summer",
+  "summer",
+  "summer",
+  "autumn",
+  "autumn",
+  "autumn",
+  "winter"
+ ],
+ "notes": [
+  {
+   "title": "Campus extent",
+   "text": "A 740 m square of the historic core and Grove, widened east to take in Lamar Hall. The stadium, western campus, and outlying university properties are beyond this scene.",
+   "links": [
+    {
+     "label": "Campus landscape",
+     "url": "https://www.tclf.org/university-mississippi"
+    }
+   ]
+  },
+  {
+   "title": "Measured terrain",
+   "text": "The ground is the real ground: bare-earth elevations from the 2018 USGS 3DEP lidar flight, drawn at true scale with no exaggeration. The historic core falls 22.8 m across the plot (134–157 m above sea level), with the Lyceum and Circle on the high ground. Contour lines are one metre apart, heavier every five; the cut edges of the plot show the profile. Use Contours to hide the lines.",
+   "links": [
+    {
+     "label": "USGS 3D Elevation Program",
+     "url": "https://www.usgs.gov/3d-elevation-program"
+    }
+   ]
+  },
+  {
+   "title": "Measured roofs and heights",
+   "text": "69 of 71 buildings carry measured roofs: a small set of planes read from the lidar returns over each OpenStreetMap footprint, so hips, valleys, dormers, penthouses and roof steps are the surveyed ones, and each wall rises to the eave the lidar saw. The Duff Center was built after the 2018 flight and keeps an interpreted height; the Student Union is shown as it stood during its 2018 expansion. Roof colours are sampled from the USDA NAIP aerial photograph.",
+   "links": [
+    {
+     "label": "USGS 3D Elevation Program",
+     "url": "https://www.usgs.gov/3d-elevation-program"
+    },
+    {
+     "label": "USDA NAIP aerial imagery (USGS)",
+     "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-national-agriculture-imagery-program-naip"
+    }
+   ]
+  },
+  {
+   "title": "Surveyed trees",
+   "text": "The 1,012 trees stand where the lidar canopy shows them, with surveyed heights and crown widths: the Grove, the Circle and the street trees are the real pattern rather than a fill. Species, leaf colour and blossom are illustrative.",
+   "links": [
+    {
+     "label": "USGS 3D Elevation Program",
+     "url": "https://www.usgs.gov/3d-elevation-program"
+    }
+   ]
+  },
+  {
+   "title": "Measured and illustrative",
+   "text": "Measured: building outlines, streets, paths and names (OpenStreetMap); ground, building heights, roof forms and tree positions (USGS lidar, 2018); roof colours (NAIP). Interpreted: wall colours, windows and trim on unstudied buildings, people, traffic, parking, weather and gameday layouts.",
+   "links": [
+    {
+     "label": "OpenStreetMap data license",
+     "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+     "label": "USGS 3D Elevation Program",
+     "url": "https://www.usgs.gov/3d-elevation-program"
+    }
+   ]
+  },
+  {
+   "title": "Landmark studies",
+   "text": "Custom models of the Lyceum, Circle halls, observatories, and Fulton Chapel use mapped footprints and published descriptions. Details and heights without measurements are interpreted.",
+   "links": [
+    {
+     "label": "Historic district survey",
+     "url": "https://www.apps.mdah.ms.gov/nom/dist/200.pdf"
+    },
+    {
+     "label": "University buildings",
+     "url": "https://catalog.olemiss.edu/university/buildings.pdf"
+    }
+   ]
+  },
+  {
+   "title": "A place in civil rights history",
+   "text": "James Meredith’s enrollment in 1962 is central to the historic district’s significance. The scene depicts everyday campus life.",
+   "links": [
+    {
+     "label": "MDAH district history",
+     "url": "https://www.apps.mdah.ms.gov/Public/district.aspx?id=200&view=facts"
+    }
+   ]
+  },
+  {
+   "title": "Explore the wider campus",
+   "text": "Use the campus-wide atlas for searchable main-campus buildings, playing fields, and streets beyond the miniature.",
+   "links": [
+    {
+     "label": "Campus-wide map",
+     "url": "campus-overview.html"
+    }
+   ]
+  },
+  {
+   "title": "Architectural detail pass",
+   "text": "Façades now distinguish arched and sash windows, stone lintels, cornices, gallery railings, column orders, and roof forms. Main elevations were compared with photographs. Minor dimensions and unseen elevations remain interpreted.",
+   "links": [
+    {
+     "label": "County courthouse photograph",
+     "url": "https://lafayettems.com/places/lafayette-county-courthouse/"
+    },
+    {
+     "label": "University building photographs",
+     "url": "https://www.university-grounds.com/home/university-of-mississippi"
+    },
+    {
+     "label": "Brevard restoration",
+     "url": "https://www.mccartycompany.com/projects/brevard-hall"
+    }
+   ]
+  },
+  {
+   "title": "Street life and wind",
+   "text": "Moving traffic, parked vehicles, bicycles, crowds, wind, and small façade projections are illustrative. Cars occupy mapped lanes and parking; extra festival crowds use open ground and closed roads. Gameday crowds gather in the Grove and Circle. These are atmospheric scenes rather than an attendance or parking survey.",
+   "links": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+     "label": "Visit Oxford",
+     "url": "https://visitoxfordms.com/blog/grove_tailgating/"
+    }
+   ]
+  },
+  {
+   "title": "Ground and forecourts",
+   "text": "Paving, lawn, mulch and asphalt are drawn as materials, and the slopes are shaded from the measured terrain. The Student Union forecourts, the Walk of Champions and the Lamar Hall forecourt follow photographs and the aerial image; their exact dimensions, planting and furniture are approximate. Shrub beds along other buildings are illustrative.",
+   "links": [
+    {
+     "label": "USGS 3D Elevation Program",
+     "url": "https://www.usgs.gov/3d-elevation-program"
+    }
+   ]
+  }
+ ],
+ "credits": [
+  {
+   "label": "OpenStreetMap contributors · ODbL",
+   "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "label": "Pocket City · April Zhu · MIT",
+   "url": "https://april-zhu.com/pocketcity/"
+  },
+  {
+   "label": "USGS 3DEP lidar",
+   "url": "https://www.usgs.gov/3d-elevation-program"
+  },
+  {
+   "label": "USDA NAIP imagery",
+   "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-national-agriculture-imagery-program-naip"
+  }
+ ],
+ "cameras": {
+  "iso": {
+   "x": 0,
+   "y": 0,
+   "yaw": -30,
+   "pitch": 40,
+   "zoom": 0.31,
+   "z": 4
+  }
+ },
+ "views": [
+  {
+   "id": "union",
+   "label": "Student Union",
+   "camera": {
+    "x": 60,
+    "y": 14,
+    "z": 3,
+    "yaw": -35,
+    "pitch": 30,
+    "zoom": 3.2
+   }
+  },
+  {
+   "id": "lamar",
+   "label": "Lamar Hall",
+   "camera": {
+    "x": 306,
+    "y": 22,
+    "z": 3,
+    "yaw": -105,
+    "pitch": 34,
+    "zoom": 2.8
+   }
+  },
+  {
+   "id": "walk",
+   "label": "Walk of Champions",
+   "camera": {
+    "x": 100,
+    "y": 14,
+    "z": 3,
+    "yaw": -10,
+    "pitch": 30,
+    "zoom": 5.5
+   }
+  },
+  {
+   "id": "chapel",
+   "label": "Fulton Chapel",
+   "camera": {
+    "x": -52.6,
+    "y": 35.2,
+    "z": 5,
+    "yaw": -90,
+    "pitch": 28,
+    "zoom": 1.5
+   }
+  },
+  {
+   "id": "peabody",
+   "label": "Peabody Hall",
+   "camera": {
+    "x": -95,
+    "y": -16,
+    "zoom": 1.9,
+    "yaw": -55,
+    "pitch": 28,
+    "z": 5
+   }
+  },
+  {
+   "id": "bryant",
+   "label": "Bryant Hall",
+   "camera": {
+    "x": -16,
+    "y": -6,
+    "zoom": 1.7,
+    "yaw": -70,
+    "pitch": 28,
+    "z": 5
+   }
+  },
+  {
+   "id": "observatory",
+   "label": "Kennon Observatory",
+   "camera": {
+    "x": -163,
+    "y": -227,
+    "yaw": -25,
+    "pitch": 32,
+    "zoom": 1.55,
+    "z": 5
+   }
+  },
+  {
+   "id": "ventress",
+   "label": "Ventress Hall",
+   "camera": {
+    "x": 93,
+    "y": -100,
+    "yaw": -90,
+    "pitch": 26,
+    "zoom": 2.6,
+    "z": 7
+   }
+  },
+  {
+   "id": "grove",
+   "label": "The Grove",
+   "camera": {
+    "x": 160,
+    "y": -45,
+    "yaw": -25,
+    "pitch": 32,
+    "zoom": 0.65,
+    "z": 5
+   }
+  },
+  {
+   "id": "circle",
+   "label": "The Circle",
+   "camera": {
+    "x": -10,
+    "y": -103,
+    "yaw": -25,
+    "pitch": 32,
+    "zoom": 0.68,
+    "z": 5
+   }
+  },
+  {
+   "id": "lyceum",
+   "label": "The Lyceum",
+   "camera": {
+    "x": -125,
+    "y": -98,
+    "yaw": -20,
+    "pitch": 27,
+    "zoom": 1.5,
+    "z": 7
+   }
+  },
+  {
+   "id": "meredith",
+   "label": "James Meredith monument",
+   "camera": {
+    "x": -170,
+    "y": -116,
+    "yaw": 60,
+    "pitch": 24,
+    "zoom": 5.5,
+    "z": 2
+   }
+  },
+  {
+   "id": "terrain",
+   "label": "Lie of the land",
+   "camera": {
+    "x": 0,
+    "y": 0,
+    "yaw": -150,
+    "pitch": 14,
+    "zoom": 0.4,
+    "z": 4
+   }
+  },
+  {
+   "id": "angle0",
+   "label": "View 1",
+   "camera": {
+    "x": 0,
+    "y": 0,
+    "yaw": -30,
+    "pitch": 38,
+    "zoom": 0.31,
+    "z": 4
+   }
+  },
+  {
+   "id": "angle1",
+   "label": "View 2",
+   "camera": {
+    "x": 0,
+    "y": 0,
+    "yaw": 30,
+    "pitch": 38,
+    "zoom": 0.31,
+    "z": 4
+   }
+  },
+  {
+   "id": "angle2",
+   "label": "View 3",
+   "camera": {
+    "x": 0,
+    "y": 0,
+    "yaw": 90,
+    "pitch": 38,
+    "zoom": 0.31,
+    "z": 4
+   }
+  },
+  {
+   "id": "angle3",
+   "label": "View 4",
+   "camera": {
+    "x": 0,
+    "y": 0,
+    "yaw": 150,
+    "pitch": 38,
+    "zoom": 0.31,
+    "z": 4
+   }
+  },
+  {
+   "id": "angle4",
+   "label": "View 5",
+   "camera": {
+    "x": 0,
+    "y": 0,
+    "yaw": 210,
+    "pitch": 38,
+    "zoom": 0.31,
+    "z": 4
+   }
+  },
+  {
+   "id": "angle5",
+   "label": "View 6",
+   "camera": {
+    "x": 0,
+    "y": 0,
+    "yaw": 270,
+    "pitch": 38,
+    "zoom": 0.31,
+    "z": 4
+   }
+  },
+  {
+   "id": "north",
+   "label": "From north",
+   "camera": {
+    "x": 10,
+    "y": -100,
+    "z": 5,
+    "yaw": 90.0,
+    "pitch": 34,
+    "zoom": 0.7
+   }
+  },
+  {
+   "id": "east",
+   "label": "From east",
+   "camera": {
+    "x": 10,
+    "y": -100,
+    "z": 5,
+    "yaw": 0.0,
+    "pitch": 34,
+    "zoom": 0.7
+   }
+  },
+  {
+   "id": "south",
+   "label": "From south",
+   "camera": {
+    "x": 10,
+    "y": -100,
+    "z": 5,
+    "yaw": -90.0,
+    "pitch": 34,
+    "zoom": 0.7
+   }
+  },
+  {
+   "id": "west",
+   "label": "From west",
+   "camera": {
+    "x": 10,
+    "y": -100,
+    "z": 5,
+    "yaw": 180.0,
+    "pitch": 34,
+    "zoom": 0.7
+   }
+  },
+  {
+   "id": "circle-low",
+   "label": "Along the Circle",
+   "camera": {
+    "x": -12,
+    "y": -98,
+    "z": 5,
+    "yaw": -45,
+    "pitch": 17,
+    "zoom": 1.35
+   }
+  },
+  {
+   "id": "tailgate",
+   "label": "Grove crowd",
+   "camera": {
+    "x": 160,
+    "y": -65,
+    "z": 3,
+    "yaw": -70,
+    "pitch": 35,
+    "zoom": 1.15
+   }
+  }
+ ],
+ "buildings": {
+  "w187869327": {
+   "roof": "flat",
+   "levels": 3,
+   "facade": "civic",
+   "arch": "union",
+   "wall": [
+    "#a65a43"
+   ],
+   "trim": "#ddd3bc"
+  },
+  "w188498900": {
+   "levels": 4,
+   "roof": "flat",
+   "facade": "civic",
+   "arch": "campus-sash"
+  },
+  "w318276286": {
+   "levels": 2,
+   "roof": "flat",
+   "arch": "modern-campus"
+  },
+  "w313153529": {
+   "levels": 1,
+   "roof": "hipped",
+   "height": 4,
+   "arch": "campus-sash"
+  },
+  "w318280064": {
+   "roof": "flat",
+   "levels": 4,
+   "facade": "plain",
+   "arch": "lamar",
+   "wall": [
+    "#cdb792"
+   ],
+   "trim": "#d9c9a8",
+   "base": "#bfa985"
+  }
+ },
+ "occasions": [
+  {
+   "id": "gameday",
+   "label": "Grove gameday",
+   "leaves": "autumn",
+   "crowd": 3.4,
+   "dress": {
+    "colours": [
+     "#b54e4a",
+     "#35516d",
+     "#ece6d8"
+    ],
+    "share": 0.85
+   },
+   "note": {
+    "text": "The Walk of Champions passes through the Grove before home football games.",
+    "source": "Ole Miss Athletics",
+    "url": "https://olemisssports.com/sports/2018/7/20/trads-the-grove-html"
+   },
+   "traffic": false,
+   "view": "tailgate"
+  }
+ ],
+ "legend": [
+  {
+   "name": "The Lyceum",
+   "source": "Landmark / mapped position",
+   "count": "",
+   "icon": "landmark",
+   "camera": {
+    "x": -125,
+    "y": -98,
+    "yaw": -20,
+    "pitch": 27,
+    "zoom": 1.5,
+    "z": 7
+   }
+  },
+  {
+   "name": "The Circle",
+   "source": "Landmark / mapped position",
+   "count": "",
+   "icon": "landmark",
+   "camera": {
+    "x": -10,
+    "y": -103,
+    "yaw": -25,
+    "pitch": 32,
+    "zoom": 0.68,
+    "z": 5
+   }
+  },
+  {
+   "name": "The Grove",
+   "source": "Landmark / mapped position",
+   "count": "",
+   "icon": "landmark",
+   "camera": {
+    "x": 160,
+    "y": -45,
+    "yaw": -25,
+    "pitch": 32,
+    "zoom": 0.65,
+    "z": 5
+   }
+  },
+  {
+   "name": "Ventress Hall",
+   "source": "Landmark / mapped position",
+   "count": "",
+   "icon": "landmark",
+   "camera": {
+    "x": 93,
+    "y": -100,
+    "yaw": -90,
+    "pitch": 26,
+    "zoom": 2.6,
+    "z": 7
+   }
+  },
+  {
+   "name": "Kennon Observatory",
+   "source": "Landmark / mapped position",
+   "count": "",
+   "icon": "landmark",
+   "camera": {
+    "x": -163,
+    "y": -227,
+    "yaw": -25,
+    "pitch": 32,
+    "zoom": 1.55,
+    "z": 5
+   }
+  }
+ ],
+ "life": {
+  "eventCrowd": [
+   [
+    [
+     251.84,
+     -8.55,
+     1.957
+    ],
+    [
+     250.25,
+     -15.74,
+     1.681
+    ],
+    [
+     251.76,
+     -10.65,
+     1.756
+    ],
+    [
+     250.86,
+     -12.77,
+     5.869
+    ],
+    [
+     240.78,
+     -15.85,
+     1.245
+    ]
+   ],
+   [
+    [
+     207.01,
+     -25.75,
+     3.037
+    ],
+    [
+     192.04,
+     -30.23,
+     2.502
+    ],
+    [
+     200.89,
+     -25.82,
+     5.405
+    ],
+    [
+     193.82,
+     -18.88,
+     1.033
+    ],
+    [
+     198.29,
+     -31.11,
+     0.028
+    ],
+    [
+     206.92,
+     -17.94,
+     3.032
+    ],
+    [
+     202.3,
+     -20.19,
+     0.375
+    ],
+    [
+     198.95,
+     -26.51,
+     2.144
+    ],
+    [
+     204.8,
+     -21.04,
+     1.695
+    ]
+   ],
+   [
+    [
+     189.21,
+     -56.77,
+     4.128
+    ],
+    [
+     182.05,
+     -59.06,
+     5.093
+    ],
+    [
+     191.55,
+     -55.19,
+     4.259
+    ],
+    [
+     178.42,
+     -50.12,
+     3.708
+    ],
+    [
+     191.61,
+     -51.21,
+     0.6
+    ],
+    [
+     182.51,
+     -60.44,
+     1.732
+    ],
+    [
+     185.84,
+     -58.08,
+     1.514
+    ]
+   ],
+   [
+    [
+     228.09,
+     -126.5,
+     1.193
+    ],
+    [
+     237.63,
+     -118.56,
+     3.941
+    ],
+    [
+     229.58,
+     -113.09,
+     1.383
+    ],
+    [
+     230.27,
+     -127.9,
+     5.972
+    ],
+    [
+     227.98,
+     -121.87,
+     3.99
+    ],
+    [
+     239.98,
+     -127.03,
+     2.689
+    ],
+    [
+     235.29,
+     -115.17,
+     1.009
+    ],
+    [
+     229.67,
+     -114.56,
+     1.714
+    ],
+    [
+     224.77,
+     -120.5,
+     1.947
+    ],
+    [
+     235.51,
+     -126.95,
+     4.348
+    ]
+   ],
+   [
+    [
+     172.15,
+     -21.11,
+     3.638
+    ],
+    [
+     175.19,
+     -24.16,
+     4.584
+    ],
+    [
+     163.95,
+     -24.85,
+     6.208
+    ],
+    [
+     167.83,
+     -18.87,
+     2.243
+    ],
+    [
+     162.77,
+     -27.21,
+     0.941
+    ],
+    [
+     165.94,
+     -25.93,
+     1.315
+    ],
+    [
+     167.85,
+     -19.66,
+     1.022
+    ],
+    [
+     174.25,
+     -31.44,
+     0.788
+    ],
+    [
+     169.58,
+     -22.51,
+     0.746
+    ],
+    [
+     161.17,
+     -17.42,
+     4.817
+    ]
+   ],
+   [
+    [
+     109.98,
+     -51.1,
+     1.75
+    ],
+    [
+     109.67,
+     -62.8,
+     4.983
+    ],
+    [
+     110.44,
+     -50.41,
+     5.247
+    ],
+    [
+     104.49,
+     -55.06,
+     5.611
+    ],
+    [
+     109.91,
+     -58.42,
+     4.542
+    ],
+    [
+     109.37,
+     -52.33,
+     1.365
+    ],
+    [
+     100.64,
+     -48.44,
+     3.825
+    ],
+    [
+     96.56,
+     -63.81,
+     1.929
+    ],
+    [
+     105.97,
+     -56.34,
+     0.038
+    ],
+    [
+     106.83,
+     -58.69,
+     5.749
+    ]
+   ],
+   [
+    [
+     256.31,
+     -105.52,
+     3.244
+    ],
+    [
+     257.29,
+     -106.43,
+     0.094
+    ],
+    [
+     256.67,
+     -107.52,
+     5.956
+    ],
+    [
+     258.05,
+     -100.82,
+     3.1
+    ]
+   ],
+   [
+    [
+     91.97,
+     -31.25,
+     5.843
+    ],
+    [
+     84.51,
+     -18.86,
+     3.186
+    ],
+    [
+     85.82,
+     -21.2,
+     4.721
+    ],
+    [
+     81.46,
+     -25.86,
+     6.231
+    ],
+    [
+     88.82,
+     -27.5,
+     2.614
+    ],
+    [
+     83.03,
+     -26.98,
+     0.135
+    ],
+    [
+     84.56,
+     -21.37,
+     1.932
+    ],
+    [
+     90.8,
+     -26.01,
+     4.674
+    ],
+    [
+     94.79,
+     -28.25,
+     4.591
+    ]
+   ],
+   [
+    [
+     197.24,
+     -118.86,
+     3.88
+    ],
+    [
+     202.89,
+     -112.12,
+     5.677
+    ],
+    [
+     202.39,
+     -118.41,
+     1.875
+    ],
+    [
+     198.83,
+     -119.42,
+     0.672
+    ],
+    [
+     199.23,
+     -115.47,
+     3.222
+    ],
+    [
+     200.64,
+     -116.44,
+     2.374
+    ],
+    [
+     200.9,
+     -113.87,
+     3.197
+    ],
+    [
+     195.74,
+     -114.12,
+     2.15
+    ],
+    [
+     198.23,
+     -116.19,
+     5.545
+    ],
+    [
+     204.37,
+     -120.48,
+     3.145
+    ],
+    [
+     195.5,
+     -118.77,
+     5.88
+    ],
+    [
+     192.88,
+     -127.28,
+     5.147
+    ],
+    [
+     196.82,
+     -121.96,
+     0.879
+    ]
+   ],
+   [
+    [
+     238.67,
+     -109.61,
+     1.827
+    ],
+    [
+     224.67,
+     -108.0,
+     1.478
+    ],
+    [
+     231.83,
+     -99.88,
+     6.085
+    ],
+    [
+     235.94,
+     -109.73,
+     0.454
+    ],
+    [
+     233.32,
+     -110.61,
+     3.582
+    ],
+    [
+     231.47,
+     -108.24,
+     4.227
+    ],
+    [
+     236.87,
+     -99.46,
+     4.961
+    ],
+    [
+     239.59,
+     -108.66,
+     2.461
+    ],
+    [
+     225.25,
+     -106.18,
+     5.715
+    ],
+    [
+     225.93,
+     -110.56,
+     2.609
+    ],
+    [
+     239.3,
+     -106.07,
+     3.681
+    ]
+   ],
+   [
+    [
+     11.38,
+     -110.16,
+     4.379
+    ],
+    [
+     5.56,
+     -97.45,
+     1.22
+    ]
+   ],
+   [
+    [
+     98.06,
+     -18.86,
+     1.475
+    ],
+    [
+     108.18,
+     -22.03,
+     3.33
+    ],
+    [
+     98.15,
+     -21.73,
+     3.793
+    ],
+    [
+     98.78,
+     -26.47,
+     2.352
+    ],
+    [
+     98.57,
+     -20.69,
+     2.817
+    ],
+    [
+     96.05,
+     -31.08,
+     3.628
+    ],
+    [
+     105.42,
+     -25.36,
+     0.95
+    ],
+    [
+     105.7,
+     -20.88,
+     3.42
+    ],
+    [
+     103.8,
+     -21.95,
+     0.147
+    ],
+    [
+     108.29,
+     -19.58,
+     5.644
+    ],
+    [
+     107.4,
+     -21.76,
+     6.272
+    ],
+    [
+     96.74,
+     -30.65,
+     5.326
+    ],
+    [
+     97.96,
+     -28.73,
+     0.981
+    ]
+   ],
+   [
+    [
+     205.27,
+     -75.59,
+     3.905
+    ],
+    [
+     202.71,
+     -69.23,
+     1.43
+    ],
+    [
+     201.32,
+     -64.83,
+     1.229
+    ],
+    [
+     192.17,
+     -75.2,
+     5.263
+    ],
+    [
+     199.65,
+     -66.4,
+     3.656
+    ],
+    [
+     203.53,
+     -64.87,
+     4.981
+    ],
+    [
+     202.21,
+     -78.43,
+     5.647
+    ],
+    [
+     202.12,
+     -71.04,
+     0.712
+    ],
+    [
+     197.24,
+     -76.48,
+     4.213
+    ],
+    [
+     205.89,
+     -71.84,
+     3.709
+    ],
+    [
+     206.15,
+     -77.04,
+     5.246
+    ],
+    [
+     196.81,
+     -78.23,
+     2.906
+    ],
+    [
+     205.61,
+     -68.85,
+     3.247
+    ],
+    [
+     192.75,
+     -68.9,
+     3.594
+    ],
+    [
+     194.1,
+     -69.45,
+     3.935
+    ],
+    [
+     197.36,
+     -66.33,
+     3.244
+    ],
+    [
+     204.57,
+     -76.97,
+     0.567
+    ],
+    [
+     193.02,
+     -68.16,
+     4.728
+    ],
+    [
+     195.33,
+     -70.06,
+     0.512
+    ]
+   ],
+   [
+    [
+     83.9,
+     -36.7,
+     5.413
+    ],
+    [
+     94.49,
+     -33.38,
+     0.082
+    ],
+    [
+     81.34,
+     -43.95,
+     5.867
+    ],
+    [
+     87.55,
+     -39.2,
+     3.293
+    ],
+    [
+     94.06,
+     -47.23,
+     5.344
+    ],
+    [
+     87.0,
+     -36.49,
+     5.734
+    ],
+    [
+     89.16,
+     -46.94,
+     3.677
+    ],
+    [
+     86.64,
+     -46.64,
+     1.232
+    ],
+    [
+     87.1,
+     -47.82,
+     2.964
+    ],
+    [
+     81.27,
+     -33.65,
+     2.702
+    ],
+    [
+     92.29,
+     -36.75,
+     1.191
+    ],
+    [
+     93.66,
+     -34.41,
+     4.883
+    ],
+    [
+     88.37,
+     -42.42,
+     4.742
+    ]
+   ],
+   [
+    [
+     158.27,
+     -89.67,
+     0.007
+    ]
+   ],
+   [
+    [
+     134.48,
+     -58.55,
+     5.998
+    ],
+    [
+     136.9,
+     -57.76,
+     3.343
+    ],
+    [
+     142.99,
+     -54.52,
+     3.928
+    ],
+    [
+     133.63,
+     -61.38,
+     3.572
+    ],
+    [
+     138.74,
+     -54.68,
+     1.994
+    ],
+    [
+     142.32,
+     -59.81,
+     6.176
+    ],
+    [
+     133.86,
+     -56.55,
+     5.278
+    ],
+    [
+     128.13,
+     -52.31,
+     1.829
+    ],
+    [
+     129.23,
+     -58.23,
+     5.241
+    ],
+    [
+     138.89,
+     -58.9,
+     0.932
+    ],
+    [
+     129.66,
+     -50.35,
+     0.702
+    ],
+    [
+     139.3,
+     -51.57,
+     4.71
+    ],
+    [
+     142.47,
+     -52.5,
+     5.854
+    ],
+    [
+     141.57,
+     -52.82,
+     4.769
+    ],
+    [
+     137.66,
+     -56.07,
+     1.14
+    ]
+   ],
+   [
+    [
+     78.77,
+     -29.69,
+     4.815
+    ],
+    [
+     79.86,
+     -28.58,
+     5.233
+    ],
+    [
+     71.67,
+     -20.65,
+     4.479
+    ],
+    [
+     73.71,
+     -27.71,
+     0.411
+    ],
+    [
+     68.35,
+     -28.85,
+     1.767
+    ],
+    [
+     78.35,
+     -28.18,
+     3.347
+    ],
+    [
+     72.42,
+     -25.7,
+     1.519
+    ]
+   ],
+   [
+    [
+     153.41,
+     -36.86,
+     1.129
+    ],
+    [
+     147.44,
+     -36.04,
+     6.098
+    ],
+    [
+     145.66,
+     -37.49,
+     3.991
+    ],
+    [
+     146.1,
+     -47.08,
+     0.231
+    ],
+    [
+     155.91,
+     -35.38,
+     4.401
+    ],
+    [
+     158.13,
+     -36.73,
+     0.898
+    ],
+    [
+     147.25,
+     -37.6,
+     1.257
+    ],
+    [
+     158.91,
+     -34.85,
+     3.005
+    ],
+    [
+     155.08,
+     -43.06,
+     3.165
+    ]
+   ],
+   [
+    [
+     237.27,
+     -48.23,
+     4.956
+    ],
+    [
+     231.06,
+     -57.2,
+     2.832
+    ],
+    [
+     227.31,
+     -53.79,
+     6.172
+    ],
+    [
+     230.17,
+     -48.8,
+     0.447
+    ],
+    [
+     238.3,
+     -57.84,
+     0.216
+    ],
+    [
+     239.09,
+     -51.3,
+     3.825
+    ],
+    [
+     231.89,
+     -53.67,
+     0.248
+    ],
+    [
+     225.67,
+     -62.53,
+     4.657
+    ],
+    [
+     232.9,
+     -48.08,
+     1.577
+    ],
+    [
+     236.28,
+     -49.22,
+     1.414
+    ]
+   ],
+   [
+    [
+     251.16,
+     -99.96,
+     6.029
+    ],
+    [
+     255.59,
+     -102.61,
+     1.47
+    ],
+    [
+     241.26,
+     -109.88,
+     4.653
+    ],
+    [
+     241.63,
+     -98.72,
+     0.137
+    ],
+    [
+     240.27,
+     -100.24,
+     0.335
+    ]
+   ],
+   [
+    [
+     136.35,
+     -101.03,
+     0.952
+    ],
+    [
+     138.47,
+     -102.9,
+     4.91
+    ],
+    [
+     130.22,
+     -110.39,
+     2.632
+    ],
+    [
+     130.03,
+     -96.12,
+     4.516
+    ],
+    [
+     131.17,
+     -111.92,
+     0.153
+    ],
+    [
+     138.02,
+     -108.17,
+     2.258
+    ],
+    [
+     129.14,
+     -108.43,
+     1.113
+    ],
+    [
+     142.44,
+     -107.37,
+     0.287
+    ],
+    [
+     138.78,
+     -108.75,
+     1.561
+    ],
+    [
+     138.6,
+     -99.82,
+     4.291
+    ]
+   ],
+   [
+    [
+     236.14,
+     5.33,
+     3.271
+    ],
+    [
+     233.4,
+     6.99,
+     6.104
+    ],
+    [
+     234.46,
+     2.3,
+     3.652
+    ],
+    [
+     234.82,
+     5.49,
+     0.558
+    ],
+    [
+     232.84,
+     6.4,
+     5.802
+    ],
+    [
+     236.19,
+     3.66,
+     1.083
+    ],
+    [
+     231.6,
+     2.36,
+     0.218
+    ]
+   ],
+   [
+    [
+     161.98,
+     -55.93,
+     4.262
+    ],
+    [
+     164.38,
+     -60.14,
+     0.128
+    ],
+    [
+     173.74,
+     -51.71,
+     1.078
+    ],
+    [
+     172.49,
+     -59.57,
+     5.483
+    ],
+    [
+     171.61,
+     -52.61,
+     6.069
+    ],
+    [
+     171.41,
+     -53.38,
+     2.232
+    ],
+    [
+     161.38,
+     -54.93,
+     6.277
+    ],
+    [
+     164.64,
+     -48.87,
+     3.661
+    ],
+    [
+     173.48,
+     -53.97,
+     4.698
+    ],
+    [
+     174.0,
+     -61.87,
+     4.434
+    ],
+    [
+     163.44,
+     -51.21,
+     2.124
+    ],
+    [
+     173.38,
+     -50.92,
+     5.754
+    ],
+    [
+     164.04,
+     -50.19,
+     3.394
+    ],
+    [
+     160.51,
+     -61.42,
+     0.116
+    ],
+    [
+     167.62,
+     -48.86,
+     3.483
+    ]
+   ],
+   [
+    [
+     94.02,
+     -83.14,
+     0.094
+    ]
+   ],
+   [
+    [
+     189.64,
+     17.22,
+     4.156
+    ],
+    [
+     186.45,
+     17.5,
+     0.169
+    ]
+   ],
+   [
+    [
+     193.57,
+     -35.37,
+     4.945
+    ],
+    [
+     206.04,
+     -36.41,
+     2.581
+    ],
+    [
+     192.04,
+     -47.73,
+     5.772
+    ],
+    [
+     198.07,
+     -36.04,
+     2.314
+    ],
+    [
+     192.49,
+     -39.97,
+     4.023
+    ],
+    [
+     206.56,
+     -37.92,
+     3.924
+    ],
+    [
+     198.33,
+     -34.62,
+     4.094
+    ],
+    [
+     193.8,
+     -39.61,
+     4.173
+    ],
+    [
+     196.34,
+     -43.72,
+     0.297
+    ],
+    [
+     193.72,
+     -46.72,
+     3.251
+    ],
+    [
+     196.13,
+     -42.72,
+     3.967
+    ],
+    [
+     199.34,
+     -33.62,
+     3.913
+    ],
+    [
+     200.97,
+     -34.96,
+     6.279
+    ],
+    [
+     192.47,
+     -38.46,
+     2.034
+    ],
+    [
+     195.24,
+     -45.4,
+     0.786
+    ],
+    [
+     195.06,
+     -44.53,
+     1.138
+    ],
+    [
+     198.42,
+     -47.61,
+     2.32
+    ],
+    [
+     194.36,
+     -36.14,
+     1.254
+    ]
+   ],
+   [
+    [
+     243.07,
+     -51.51,
+     3.785
+    ],
+    [
+     248.8,
+     -50.28,
+     2.763
+    ],
+    [
+     255.55,
+     -58.23,
+     3.15
+    ],
+    [
+     241.77,
+     -52.51,
+     6.014
+    ],
+    [
+     245.06,
+     -57.99,
+     0.371
+    ],
+    [
+     240.35,
+     -50.04,
+     5.053
+    ],
+    [
+     249.53,
+     -58.14,
+     1.162
+    ],
+    [
+     245.52,
+     -52.04,
+     5.602
+    ],
+    [
+     254.0,
+     -59.76,
+     2.031
+    ],
+    [
+     249.42,
+     -63.58,
+     3.25
+    ],
+    [
+     243.94,
+     -51.61,
+     2.626
+    ]
+   ],
+   [
+    [
+     204.17,
+     -8.63,
+     2.948
+    ],
+    [
+     202.53,
+     -0.78,
+     5.654
+    ],
+    [
+     195.98,
+     -14.58,
+     1.369
+    ],
+    [
+     205.61,
+     -4.39,
+     5.744
+    ],
+    [
+     204.91,
+     -3.76,
+     1.728
+    ]
+   ],
+   [
+    [
+     192.13,
+     -54.16,
+     0.981
+    ],
+    [
+     198.13,
+     -56.4,
+     0.135
+    ],
+    [
+     199.21,
+     -51.43,
+     4.115
+    ],
+    [
+     204.01,
+     -50.25,
+     1.045
+    ],
+    [
+     197.29,
+     -55.21,
+     3.777
+    ],
+    [
+     196.62,
+     -54.25,
+     0.07
+    ],
+    [
+     196.19,
+     -63.08,
+     3.564
+    ],
+    [
+     206.06,
+     -58.03,
+     0.465
+    ],
+    [
+     197.13,
+     -60.89,
+     2.557
+    ],
+    [
+     198.45,
+     -48.49,
+     0.433
+    ],
+    [
+     202.18,
+     -61.39,
+     0.687
+    ]
+   ],
+   [
+    [
+     207.33,
+     -105.06,
+     1.283
+    ],
+    [
+     204.24,
+     -108.97,
+     5.672
+    ],
+    [
+     206.37,
+     -103.64,
+     5.509
+    ],
+    [
+     197.63,
+     -107.32,
+     2.746
+    ],
+    [
+     196.9,
+     -105.97,
+     3.396
+    ],
+    [
+     196.08,
+     -104.25,
+     6.182
+    ],
+    [
+     197.69,
+     -96.92,
+     2.766
+    ],
+    [
+     204.49,
+     -102.45,
+     3.271
+    ],
+    [
+     205.97,
+     -104.35,
+     2.488
+    ]
+   ],
+   [
+    [
+     194.39,
+     -130.34,
+     5.54
+    ],
+    [
+     206.85,
+     -129.75,
+     6.245
+    ],
+    [
+     202.75,
+     -128.48,
+     4.148
+    ]
+   ],
+   [
+    [
+     161.84,
+     -14.94,
+     2.359
+    ],
+    [
+     162.89,
+     -15.6,
+     1.759
+    ],
+    [
+     166.36,
+     -7.98,
+     2.242
+    ],
+    [
+     173.04,
+     -3.86,
+     2.685
+    ],
+    [
+     172.9,
+     -12.56,
+     5.028
+    ],
+    [
+     162.97,
+     -1.71,
+     1.47
+    ],
+    [
+     165.04,
+     -15.39,
+     0.038
+    ],
+    [
+     174.79,
+     -8.32,
+     1.091
+    ],
+    [
+     175.29,
+     -10.46,
+     4.959
+    ],
+    [
+     164.23,
+     -11.84,
+     5.92
+    ],
+    [
+     163.2,
+     -13.71,
+     2.018
+    ],
+    [
+     172.82,
+     -9.58,
+     4.065
+    ],
+    [
+     174.16,
+     -13.41,
+     2.904
+    ]
+   ],
+   [
+    [
+     95.0,
+     7.35,
+     2.517
+    ],
+    [
+     82.92,
+     0.55,
+     3.857
+    ],
+    [
+     92.98,
+     13.31,
+     1.535
+    ],
+    [
+     88.02,
+     1.22,
+     5.524
+    ],
+    [
+     91.79,
+     14.75,
+     5.21
+    ],
+    [
+     90.82,
+     14.39,
+     4.03
+    ]
+   ],
+   [
+    [
+     139.72,
+     -21.18,
+     5.685
+    ],
+    [
+     133.91,
+     -16.1,
+     3.762
+    ],
+    [
+     143.86,
+     -31.17,
+     2.817
+    ],
+    [
+     139.32,
+     -23.18,
+     1.905
+    ],
+    [
+     140.31,
+     -29.86,
+     3.369
+    ],
+    [
+     128.76,
+     -29.75,
+     0.841
+    ],
+    [
+     141.37,
+     -18.33,
+     0.185
+    ],
+    [
+     140.25,
+     -18.53,
+     0.389
+    ],
+    [
+     141.63,
+     -23.47,
+     1.66
+    ],
+    [
+     132.98,
+     -23.29,
+     2.137
+    ]
+   ],
+   [
+    [
+     105.97,
+     -7.98,
+     3.665
+    ],
+    [
+     104.96,
+     -5.84,
+     1.856
+    ],
+    [
+     106.28,
+     -13.26,
+     4.516
+    ],
+    [
+     106.62,
+     -14.87,
+     3.281
+    ],
+    [
+     105.08,
+     -15.59,
+     1.823
+    ],
+    [
+     98.84,
+     -11.17,
+     3.227
+    ],
+    [
+     105.52,
+     -6.71,
+     1.043
+    ],
+    [
+     110.85,
+     -3.49,
+     1.867
+    ],
+    [
+     97.26,
+     -13.67,
+     0.145
+    ],
+    [
+     98.77,
+     -0.83,
+     2.946
+    ],
+    [
+     102.89,
+     -1.31,
+     1.348
+    ],
+    [
+     107.89,
+     -5.72,
+     4.225
+    ]
+   ],
+   [
+    [
+     68.46,
+     -46.78,
+     0.603
+    ],
+    [
+     70.43,
+     -34.22,
+     3.951
+    ],
+    [
+     72.06,
+     -40.55,
+     0.638
+    ],
+    [
+     79.82,
+     -41.62,
+     1.491
+    ]
+   ],
+   [
+    [
+     178.16,
+     -24.74,
+     0.836
+    ],
+    [
+     185.76,
+     -24.05,
+     2.443
+    ],
+    [
+     182.14,
+     -27.23,
+     0.717
+    ],
+    [
+     179.61,
+     -26.75,
+     4.569
+    ],
+    [
+     185.61,
+     -21.73,
+     4.855
+    ],
+    [
+     191.34,
+     -19.62,
+     1.896
+    ],
+    [
+     179.38,
+     -29.2,
+     2.559
+    ],
+    [
+     176.69,
+     -31.17,
+     4.782
+    ],
+    [
+     191.92,
+     -27.69,
+     5.25
+    ],
+    [
+     191.57,
+     -24.3,
+     0.128
+    ],
+    [
+     177.43,
+     -31.9,
+     0.91
+    ],
+    [
+     187.64,
+     -29.73,
+     3.056
+    ],
+    [
+     179.53,
+     -24.96,
+     0.557
+    ],
+    [
+     185.06,
+     -18.23,
+     4.131
+    ],
+    [
+     180.35,
+     -21.92,
+     0.305
+    ]
+   ],
+   [
+    [
+     87.02,
+     -72.57,
+     0.52
+    ],
+    [
+     81.89,
+     -64.13,
+     0.24
+    ],
+    [
+     88.84,
+     -74.61,
+     4.67
+    ],
+    [
+     93.9,
+     -70.75,
+     1.982
+    ],
+    [
+     89.56,
+     -73.24,
+     1.896
+    ],
+    [
+     95.26,
+     -77.84,
+     1.725
+    ],
+    [
+     82.92,
+     -70.67,
+     1.563
+    ]
+   ],
+   [
+    [
+     125.78,
+     -52.74,
+     0.049
+    ],
+    [
+     123.65,
+     -59.19,
+     3.698
+    ],
+    [
+     113.75,
+     -60.51,
+     2.351
+    ],
+    [
+     122.55,
+     -57.93,
+     3.67
+    ],
+    [
+     126.1,
+     -55.47,
+     0.761
+    ],
+    [
+     124.17,
+     -48.97,
+     2.729
+    ],
+    [
+     115.14,
+     -49.5,
+     1.362
+    ],
+    [
+     114.95,
+     -62.52,
+     1.765
+    ],
+    [
+     122.24,
+     -50.97,
+     0.316
+    ],
+    [
+     125.84,
+     -50.16,
+     3.254
+    ]
+   ],
+   [
+    [
+     200.53,
+     -85.84,
+     3.157
+    ],
+    [
+     206.1,
+     -91.09,
+     4.899
+    ],
+    [
+     198.57,
+     -80.37,
+     5.352
+    ],
+    [
+     197.39,
+     -93.63,
+     4.845
+    ],
+    [
+     195.99,
+     -86.58,
+     2.482
+    ],
+    [
+     200.02,
+     -93.61,
+     5.812
+    ],
+    [
+     195.36,
+     -95.13,
+     0.421
+    ],
+    [
+     201.69,
+     -94.23,
+     2.922
+    ],
+    [
+     202.61,
+     -88.77,
+     6.125
+    ],
+    [
+     201.45,
+     -90.93,
+     0.528
+    ]
+   ],
+   [
+    [
+     252.55,
+     -71.86,
+     0.78
+    ],
+    [
+     243.99,
+     -74.39,
+     4.568
+    ],
+    [
+     240.14,
+     -68.3,
+     0.581
+    ]
+   ],
+   [
+    [
+     212.37,
+     -102.02,
+     4.362
+    ],
+    [
+     219.37,
+     -101.9,
+     1.917
+    ],
+    [
+     211.32,
+     -97.89,
+     2.474
+    ],
+    [
+     223.42,
+     -110.79,
+     0.696
+    ],
+    [
+     208.25,
+     -103.45,
+     5.793
+    ],
+    [
+     220.02,
+     -99.36,
+     0.636
+    ],
+    [
+     214.29,
+     -107.3,
+     4.776
+    ],
+    [
+     223.46,
+     -101.36,
+     0.265
+    ],
+    [
+     214.44,
+     -105.6,
+     5.545
+    ]
+   ],
+   [
+    [
+     214.25,
+     -129.08,
+     2.251
+    ],
+    [
+     212.5,
+     -132.48,
+     4.297
+    ],
+    [
+     218.72,
+     -128.77,
+     0.265
+    ],
+    [
+     216.98,
+     -131.76,
+     2.257
+    ],
+    [
+     218.46,
+     -130.63,
+     3.722
+    ]
+   ],
+   [
+    [
+     98.38,
+     17.31,
+     0.645
+    ],
+    [
+     107.85,
+     18.45,
+     2.64
+    ],
+    [
+     111.14,
+     20.71,
+     2.486
+    ],
+    [
+     109.47,
+     21.11,
+     6.222
+    ]
+   ],
+   [
+    [
+     166.86,
+     -90.95,
+     6.027
+    ],
+    [
+     164.44,
+     -86.14,
+     4.099
+    ],
+    [
+     160.69,
+     -80.44,
+     4.405
+    ],
+    [
+     173.8,
+     -84.35,
+     0.97
+    ],
+    [
+     163.51,
+     -94.77,
+     3.53
+    ],
+    [
+     164.14,
+     -84.32,
+     5.989
+    ]
+   ],
+   [
+    [
+     168.34,
+     -45.83,
+     3.012
+    ],
+    [
+     161.41,
+     -45.44,
+     0.12
+    ],
+    [
+     169.15,
+     -41.55,
+     0.574
+    ],
+    [
+     161.52,
+     -34.69,
+     3.138
+    ],
+    [
+     170.34,
+     -35.28,
+     2.081
+    ],
+    [
+     175.96,
+     -34.05,
+     3.589
+    ],
+    [
+     169.35,
+     -33.03,
+     1.048
+    ]
+   ],
+   [
+    [
+     177.62,
+     2.66,
+     1.084
+    ],
+    [
+     185.03,
+     7.94,
+     4.787
+    ],
+    [
+     178.47,
+     5.04,
+     2.617
+    ],
+    [
+     190.79,
+     0.77,
+     4.545
+    ],
+    [
+     179.52,
+     5.95,
+     3.989
+    ],
+    [
+     190.07,
+     10.69,
+     3.587
+    ],
+    [
+     182.41,
+     6.09,
+     2.869
+    ]
+   ],
+   [
+    [
+     150.62,
+     -104.59,
+     2.089
+    ],
+    [
+     152.58,
+     -101.82,
+     4.439
+    ],
+    [
+     149.91,
+     -103.87,
+     0.551
+    ],
+    [
+     154.26,
+     -103.54,
+     3.252
+    ],
+    [
+     147.53,
+     -105.28,
+     4.132
+    ]
+   ],
+   [
+    [
+     124.68,
+     -119.35,
+     6.126
+    ],
+    [
+     123.58,
+     -123.1,
+     5.507
+    ]
+   ],
+   [
+    [
+     139.73,
+     -43.52,
+     1.106
+    ],
+    [
+     131.97,
+     -47.2,
+     2.959
+    ],
+    [
+     131.81,
+     -32.2,
+     0.524
+    ],
+    [
+     135.79,
+     -46.04,
+     0.048
+    ],
+    [
+     141.87,
+     -38.55,
+     2.42
+    ],
+    [
+     139.89,
+     -36.28,
+     4.005
+    ],
+    [
+     139.89,
+     -46.52,
+     5.499
+    ],
+    [
+     142.67,
+     -40.77,
+     0.544
+    ]
+   ],
+   [
+    [
+     233.25,
+     -44.18,
+     4.327
+    ],
+    [
+     233.58,
+     -45.42,
+     5.763
+    ],
+    [
+     224.92,
+     -35.89,
+     3.374
+    ],
+    [
+     236.28,
+     -37.86,
+     1.602
+    ],
+    [
+     233.64,
+     -47.83,
+     2.357
+    ],
+    [
+     233.23,
+     -39.0,
+     4.048
+    ],
+    [
+     226.19,
+     -36.35,
+     0.943
+    ],
+    [
+     231.31,
+     -32.11,
+     4.987
+    ]
+   ],
+   [
+    [
+     122.52,
+     -32.0,
+     5.867
+    ],
+    [
+     120.09,
+     -20.03,
+     4.727
+    ],
+    [
+     115.2,
+     -22.58,
+     5.175
+    ],
+    [
+     118.6,
+     -31.61,
+     4.748
+    ],
+    [
+     120.29,
+     -17.72,
+     6.021
+    ],
+    [
+     113.55,
+     -27.44,
+     6.061
+    ],
+    [
+     114.02,
+     -28.95,
+     5.392
+    ],
+    [
+     114.56,
+     -25.17,
+     3.994
+    ],
+    [
+     119.63,
+     -22.34,
+     4.715
+    ],
+    [
+     116.41,
+     -17.12,
+     3.281
+    ],
+    [
+     114.88,
+     -19.0,
+     0.661
+    ],
+    [
+     116.93,
+     -21.12,
+     1.753
+    ]
+   ],
+   [
+    [
+     110.71,
+     -103.96,
+     1.31
+    ],
+    [
+     107.22,
+     -104.57,
+     4.792
+    ],
+    [
+     107.75,
+     -106.67,
+     5.588
+    ]
+   ],
+   [
+    [
+     194.99,
+     16.71,
+     3.676
+    ]
+   ],
+   [
+    [
+     241.32,
+     -18.15,
+     6.14
+    ],
+    [
+     252.79,
+     -22.73,
+     4.684
+    ],
+    [
+     242.92,
+     -31.37,
+     3.973
+    ],
+    [
+     253.65,
+     -21.36,
+     3.519
+    ],
+    [
+     242.81,
+     -24.88,
+     5.622
+    ],
+    [
+     243.9,
+     -19.78,
+     1.706
+    ],
+    [
+     251.31,
+     -21.02,
+     0.016
+    ],
+    [
+     254.0,
+     -26.34,
+     6.187
+    ],
+    [
+     253.75,
+     -22.48,
+     6.056
+    ],
+    [
+     243.06,
+     -22.94,
+     5.121
+    ]
+   ],
+   [
+    [
+     -29.78,
+     -110.11,
+     1.121
+    ]
+   ],
+   [
+    [
+     132.73,
+     20.46,
+     3.807
+    ],
+    [
+     129.55,
+     18.05,
+     3.544
+    ],
+    [
+     135.92,
+     22.78,
+     5.265
+    ],
+    [
+     137.34,
+     18.94,
+     1.267
+    ],
+    [
+     135.76,
+     20.93,
+     3.859
+    ]
+   ],
+   [
+    [
+     143.29,
+     5.66,
+     3.585
+    ],
+    [
+     133.26,
+     4.71,
+     3.995
+    ],
+    [
+     133.25,
+     6.67,
+     6.176
+    ],
+    [
+     132.9,
+     10.27,
+     0.124
+    ],
+    [
+     141.75,
+     9.33,
+     4.199
+    ],
+    [
+     130.02,
+     3.47,
+     1.148
+    ],
+    [
+     128.02,
+     6.85,
+     0.624
+    ],
+    [
+     131.44,
+     7.07,
+     5.188
+    ]
+   ],
+   [
+    [
+     205.42,
+     6.73,
+     1.735
+    ],
+    [
+     192.52,
+     11.81,
+     3.728
+    ],
+    [
+     203.45,
+     14.94,
+     0.311
+    ],
+    [
+     199.65,
+     7.65,
+     0.832
+    ],
+    [
+     203.28,
+     1.02,
+     3.025
+    ],
+    [
+     195.23,
+     8.66,
+     3.132
+    ],
+    [
+     205.44,
+     14.87,
+     0.374
+    ],
+    [
+     206.23,
+     11.67,
+     5.377
+    ],
+    [
+     207.38,
+     11.36,
+     3.337
+    ]
+   ],
+   [
+    [
+     211.08,
+     -79.66,
+     0.948
+    ],
+    [
+     214.54,
+     -65.39,
+     0.416
+    ],
+    [
+     221.13,
+     -79.19,
+     4.679
+    ],
+    [
+     223.37,
+     -70.19,
+     1.324
+    ],
+    [
+     218.72,
+     -72.51,
+     5.534
+    ],
+    [
+     208.07,
+     -78.89,
+     1.035
+    ],
+    [
+     218.1,
+     -67.44,
+     2.712
+    ],
+    [
+     214.93,
+     -77.22,
+     5.538
+    ],
+    [
+     219.77,
+     -76.51,
+     5.806
+    ]
+   ],
+   [
+    [
+     213.34,
+     -127.53,
+     1.263
+    ],
+    [
+     213.56,
+     -122.39,
+     3.166
+    ],
+    [
+     210.5,
+     -126.38,
+     4.734
+    ],
+    [
+     218.72,
+     -118.98,
+     5.436
+    ],
+    [
+     223.48,
+     -121.05,
+     5.843
+    ],
+    [
+     215.94,
+     -113.39,
+     5.285
+    ],
+    [
+     221.03,
+     -113.86,
+     3.875
+    ]
+   ],
+   [
+    [
+     216.6,
+     -36.25,
+     5.03
+    ],
+    [
+     222.83,
+     -39.89,
+     4.276
+    ],
+    [
+     210.65,
+     -36.12,
+     5.631
+    ],
+    [
+     220.01,
+     -41.49,
+     4.138
+    ],
+    [
+     223.99,
+     -32.47,
+     2.777
+    ],
+    [
+     214.57,
+     -45.82,
+     0.04
+    ],
+    [
+     208.18,
+     -37.91,
+     3.415
+    ]
+   ],
+   [
+    [
+     120.82,
+     -34.54,
+     4.096
+    ],
+    [
+     116.39,
+     -32.43,
+     4.526
+    ],
+    [
+     112.8,
+     -44.47,
+     0.955
+    ],
+    [
+     126.67,
+     -34.7,
+     4.366
+    ],
+    [
+     121.45,
+     -38.0,
+     0.679
+    ],
+    [
+     124.66,
+     -41.66,
+     0.337
+    ],
+    [
+     124.46,
+     -38.24,
+     5.773
+    ],
+    [
+     124.09,
+     -40.9,
+     4.715
+    ],
+    [
+     127.63,
+     -32.98,
+     6.073
+    ],
+    [
+     127.92,
+     -43.65,
+     5.346
+    ],
+    [
+     116.6,
+     -42.75,
+     3.734
+    ],
+    [
+     121.16,
+     -32.65,
+     3.51
+    ],
+    [
+     124.89,
+     -36.62,
+     0.005
+    ],
+    [
+     118.52,
+     -46.39,
+     1.821
+    ],
+    [
+     114.71,
+     -45.99,
+     3.724
+    ]
+   ],
+   [
+    [
+     115.67,
+     -77.52,
+     3.846
+    ],
+    [
+     117.97,
+     -77.78,
+     4.827
+    ],
+    [
+     116.18,
+     -73.84,
+     5.502
+    ],
+    [
+     112.88,
+     -75.15,
+     4.745
+    ],
+    [
+     116.16,
+     -76.17,
+     4.528
+    ],
+    [
+     112.92,
+     -65.72,
+     1.6
+    ]
+   ],
+   [
+    [
+     110.09,
+     -83.57,
+     1.706
+    ],
+    [
+     107.67,
+     -91.79,
+     0.915
+    ],
+    [
+     108.35,
+     -92.32,
+     1.75
+    ],
+    [
+     98.34,
+     -80.38,
+     1.706
+    ],
+    [
+     110.87,
+     -81.62,
+     6.171
+    ]
+   ],
+   [
+    [
+     148.83,
+     -61.8,
+     3.726
+    ],
+    [
+     149.76,
+     -54.51,
+     4.044
+    ],
+    [
+     155.14,
+     -50.09,
+     1.612
+    ]
+   ],
+   [
+    [
+     114.37,
+     -13.14,
+     2.43
+    ],
+    [
+     115.34,
+     -9.43,
+     4.798
+    ],
+    [
+     115.42,
+     -14.25,
+     2.668
+    ],
+    [
+     112.13,
+     -14.61,
+     5.341
+    ],
+    [
+     122.09,
+     -3.47,
+     1.057
+    ],
+    [
+     124.87,
+     -15.58,
+     2.093
+    ]
+   ],
+   [
+    [
+     118.48,
+     -98.79,
+     1.905
+    ],
+    [
+     118.1,
+     -110.29,
+     1.896
+    ],
+    [
+     127.36,
+     -109.37,
+     2.6
+    ],
+    [
+     115.13,
+     -109.01,
+     5.073
+    ],
+    [
+     116.82,
+     -111.64,
+     5.966
+    ],
+    [
+     125.02,
+     -102.68,
+     1.591
+    ],
+    [
+     117.56,
+     -98.13,
+     2.917
+    ],
+    [
+     124.23,
+     -107.94,
+     2.143
+    ],
+    [
+     114.18,
+     -109.14,
+     0.921
+    ],
+    [
+     122.67,
+     -100.24,
+     1.327
+    ]
+   ],
+   [
+    [
+     189.78,
+     -33.48,
+     3.304
+    ],
+    [
+     186.41,
+     -44.41,
+     5.102
+    ],
+    [
+     183.66,
+     -42.97,
+     4.832
+    ],
+    [
+     191.13,
+     -34.12,
+     0.387
+    ],
+    [
+     184.27,
+     -37.71,
+     4.335
+    ],
+    [
+     180.09,
+     -46.03,
+     1.627
+    ]
+   ],
+   [
+    [
+     226.01,
+     -13.67,
+     3.206
+    ],
+    [
+     225.57,
+     -11.98,
+     2.924
+    ],
+    [
+     235.22,
+     -14.43,
+     4.979
+    ],
+    [
+     226.75,
+     -12.64,
+     0.361
+    ],
+    [
+     228.55,
+     -1.3,
+     6.072
+    ],
+    [
+     224.52,
+     -6.23,
+     4.307
+    ],
+    [
+     234.99,
+     -8.14,
+     2.421
+    ]
+   ],
+   [
+    [
+     102.91,
+     12.66,
+     0.344
+    ],
+    [
+     111.6,
+     9.72,
+     4.355
+    ],
+    [
+     99.28,
+     2.08,
+     0.744
+    ],
+    [
+     96.16,
+     15.06,
+     2.177
+    ],
+    [
+     108.21,
+     11.76,
+     4.383
+    ],
+    [
+     104.4,
+     15.33,
+     4.101
+    ],
+    [
+     109.74,
+     10.88,
+     1.276
+    ]
+   ],
+   [
+    [
+     146.2,
+     4.4,
+     5.259
+    ],
+    [
+     154.49,
+     12.48,
+     5.615
+    ],
+    [
+     154.16,
+     6.45,
+     2.115
+    ],
+    [
+     153.46,
+     7.4,
+     4.411
+    ],
+    [
+     149.69,
+     13.46,
+     1.597
+    ],
+    [
+     156.62,
+     7.15,
+     0.332
+    ],
+    [
+     153.53,
+     1.18,
+     3.582
+    ],
+    [
+     154.72,
+     10.39,
+     4.879
+    ],
+    [
+     150.3,
+     15.58,
+     0.463
+    ]
+   ],
+   [
+    [
+     143.83,
+     -6.6,
+     4.501
+    ],
+    [
+     139.97,
+     -2.6,
+     1.108
+    ],
+    [
+     133.99,
+     -7.36,
+     6.251
+    ],
+    [
+     131.58,
+     -9.52,
+     1.66
+    ],
+    [
+     129.99,
+     -3.57,
+     5.704
+    ]
+   ],
+   [
+    [
+     102.21,
+     -45.11,
+     1.005
+    ],
+    [
+     107.79,
+     -42.71,
+     0.154
+    ],
+    [
+     106.88,
+     -34.05,
+     5.579
+    ],
+    [
+     102.78,
+     -40.19,
+     1.44
+    ],
+    [
+     103.09,
+     -43.6,
+     2.22
+    ],
+    [
+     99.93,
+     -35.2,
+     1.288
+    ],
+    [
+     109.07,
+     -35.8,
+     1.908
+    ],
+    [
+     106.79,
+     -39.6,
+     5.428
+    ],
+    [
+     108.98,
+     -42.21,
+     4.036
+    ],
+    [
+     100.12,
+     -41.75,
+     4.87
+    ],
+    [
+     107.77,
+     -37.51,
+     1.982
+    ]
+   ],
+   [
+    [
+     82.4,
+     -51.82,
+     4.535
+    ],
+    [
+     84.96,
+     -52.16,
+     0.76
+    ],
+    [
+     83.64,
+     -48.03,
+     3.917
+    ],
+    [
+     90.13,
+     -49.9,
+     6.059
+    ],
+    [
+     87.46,
+     -50.73,
+     4.946
+    ],
+    [
+     84.97,
+     -60.13,
+     3.581
+    ],
+    [
+     93.6,
+     -62.56,
+     0.093
+    ],
+    [
+     92.9,
+     -58.86,
+     4.516
+    ],
+    [
+     86.54,
+     -62.94,
+     1.306
+    ],
+    [
+     81.27,
+     -59.45,
+     0.352
+    ],
+    [
+     88.34,
+     -53.66,
+     2.142
+    ],
+    [
+     89.64,
+     -60.74,
+     0.588
+    ],
+    [
+     81.19,
+     -62.13,
+     3.654
+    ]
+   ],
+   [
+    [
+     -9.77,
+     -142.27,
+     1.86
+    ]
+   ],
+   [
+    [
+     252.31,
+     -40.46,
+     2.076
+    ],
+    [
+     240.83,
+     -47.89,
+     1.347
+    ],
+    [
+     245.8,
+     -41.69,
+     5.134
+    ],
+    [
+     245.08,
+     -33.35,
+     2.349
+    ],
+    [
+     253.98,
+     -38.35,
+     4.272
+    ],
+    [
+     242.27,
+     -47.67,
+     4.923
+    ],
+    [
+     245.37,
+     -38.5,
+     2.404
+    ],
+    [
+     250.45,
+     -43.34,
+     5.498
+    ],
+    [
+     254.06,
+     -37.47,
+     6.196
+    ],
+    [
+     240.93,
+     -38.97,
+     0.436
+    ],
+    [
+     252.06,
+     -47.49,
+     0.472
+    ],
+    [
+     255.8,
+     -40.37,
+     2.953
+    ],
+    [
+     248.73,
+     -42.2,
+     1.475
+    ]
+   ],
+   [
+    [
+     180.15,
+     -113.64,
+     2.322
+    ],
+    [
+     188.44,
+     -125.25,
+     3.306
+    ],
+    [
+     190.21,
+     -121.68,
+     5.88
+    ]
+   ],
+   [
+    [
+     214.48,
+     -4.37,
+     3.756
+    ],
+    [
+     222.52,
+     -8.53,
+     4.133
+    ],
+    [
+     215.0,
+     -3.08,
+     0.857
+    ],
+    [
+     211.94,
+     -7.89,
+     5.785
+    ],
+    [
+     222.92,
+     -0.52,
+     1.119
+    ],
+    [
+     208.52,
+     -7.33,
+     1.417
+    ],
+    [
+     221.57,
+     -2.51,
+     4.068
+    ],
+    [
+     212.39,
+     -8.74,
+     0.582
+    ],
+    [
+     221.64,
+     -0.25,
+     5.105
+    ],
+    [
+     217.37,
+     -10.99,
+     4.131
+    ],
+    [
+     211.76,
+     -6.51,
+     1.518
+    ]
+   ],
+   [
+    [
+     210.94,
+     -57.3,
+     5.898
+    ],
+    [
+     219.07,
+     -51.7,
+     0.09
+    ],
+    [
+     213.18,
+     -51.09,
+     4.643
+    ],
+    [
+     214.02,
+     -59.52,
+     0.276
+    ],
+    [
+     218.12,
+     -52.99,
+     6.139
+    ],
+    [
+     222.93,
+     -49.25,
+     1.185
+    ]
+   ],
+   [
+    [
+     110.67,
+     -74.51,
+     0.898
+    ],
+    [
+     108.03,
+     -76.59,
+     3.018
+    ],
+    [
+     108.76,
+     -69.85,
+     4.635
+    ],
+    [
+     108.14,
+     -75.17,
+     4.601
+    ],
+    [
+     101.07,
+     -70.1,
+     0.015
+    ],
+    [
+     103.52,
+     -64.63,
+     2.61
+    ],
+    [
+     103.52,
+     -77.09,
+     3.021
+    ],
+    [
+     110.36,
+     -77.67,
+     0.792
+    ],
+    [
+     101.81,
+     -79.13,
+     5.025
+    ]
+   ],
+   [
+    [
+     188.18,
+     -0.91,
+     3.202
+    ],
+    [
+     181.31,
+     -12.46,
+     4.292
+    ],
+    [
+     184.05,
+     -14.74,
+     6.154
+    ],
+    [
+     178.38,
+     -0.57,
+     5.911
+    ],
+    [
+     190.94,
+     -0.26,
+     5.149
+    ],
+    [
+     177.24,
+     -4.97,
+     5.782
+    ],
+    [
+     188.32,
+     -1.9,
+     5.618
+    ],
+    [
+     184.56,
+     -4.07,
+     1.586
+    ]
+   ],
+   [
+    [
+     155.94,
+     -69.26,
+     0.298
+    ],
+    [
+     156.92,
+     -76.57,
+     0.711
+    ],
+    [
+     157.32,
+     -70.06,
+     6.201
+    ],
+    [
+     145.63,
+     -71.27,
+     2.175
+    ],
+    [
+     155.34,
+     -73.29,
+     2.392
+    ]
+   ],
+   [
+    [
+     170.81,
+     -75.47,
+     3.551
+    ],
+    [
+     171.63,
+     -76.12,
+     2.441
+    ],
+    [
+     170.21,
+     -72.19,
+     4.436
+    ],
+    [
+     166.17,
+     -64.91,
+     1.823
+    ],
+    [
+     171.76,
+     -74.45,
+     3.868
+    ],
+    [
+     167.33,
+     -71.85,
+     0.956
+    ],
+    [
+     170.86,
+     -67.59,
+     4.988
+    ],
+    [
+     166.7,
+     -67.57,
+     0.141
+    ],
+    [
+     165.19,
+     -68.24,
+     0.744
+    ]
+   ],
+   [
+    [
+     250.89,
+     -94.17,
+     1.341
+    ],
+    [
+     245.77,
+     -84.17,
+     4.04
+    ],
+    [
+     254.24,
+     -91.45,
+     1.78
+    ],
+    [
+     243.91,
+     -94.81,
+     0.054
+    ],
+    [
+     249.27,
+     -93.75,
+     2.492
+    ],
+    [
+     243.4,
+     -88.78,
+     0.913
+    ],
+    [
+     251.4,
+     -82.74,
+     4.067
+    ]
+   ],
+   [
+    [
+     66.69,
+     -58.34,
+     0.344
+    ],
+    [
+     79.62,
+     -50.22,
+     0.033
+    ],
+    [
+     78.1,
+     -59.59,
+     1.805
+    ],
+    [
+     78.38,
+     -57.87,
+     4.368
+    ],
+    [
+     78.59,
+     -56.54,
+     3.289
+    ],
+    [
+     71.7,
+     -59.9,
+     1.343
+    ],
+    [
+     77.95,
+     -54.02,
+     2.708
+    ]
+   ],
+   [
+    [
+     76.13,
+     -66.68,
+     3.202
+    ],
+    [
+     79.27,
+     -78.58,
+     3.695
+    ],
+    [
+     71.67,
+     -73.84,
+     0.139
+    ],
+    [
+     70.5,
+     -72.07,
+     2.756
+    ],
+    [
+     79.34,
+     -75.95,
+     2.759
+    ]
+   ],
+   [
+    [
+     187.03,
+     -71.26,
+     4.923
+    ],
+    [
+     184.02,
+     -64.7,
+     6.165
+    ],
+    [
+     190.27,
+     -77.01,
+     0.736
+    ],
+    [
+     189.47,
+     -74.24,
+     3.621
+    ],
+    [
+     177.33,
+     -76.97,
+     3.007
+    ],
+    [
+     176.28,
+     -79.5,
+     1.048
+    ],
+    [
+     177.2,
+     -70.11,
+     3.874
+    ],
+    [
+     181.99,
+     -77.21,
+     1.03
+    ],
+    [
+     176.26,
+     -71.42,
+     4.734
+    ],
+    [
+     185.34,
+     -70.93,
+     4.397
+    ],
+    [
+     189.73,
+     -69.94,
+     1.893
+    ],
+    [
+     182.84,
+     -77.13,
+     1.372
+    ]
+   ],
+   [
+    [
+     182.27,
+     -94.42,
+     2.861
+    ],
+    [
+     187.74,
+     -85.02,
+     4.993
+    ],
+    [
+     187.84,
+     -90.89,
+     2.496
+    ],
+    [
+     183.39,
+     -90.28,
+     4.712
+    ],
+    [
+     183.54,
+     -83.22,
+     1.793
+    ],
+    [
+     184.98,
+     -92.09,
+     5.805
+    ]
+   ],
+   [
+    [
+     118.3,
+     16.76,
+     6.226
+    ],
+    [
+     113.18,
+     21.77,
+     2.429
+    ],
+    [
+     126.29,
+     20.07,
+     5.403
+    ]
+   ],
+   [
+    [
+     233.39,
+     -73.75,
+     1.592
+    ],
+    [
+     239.05,
+     -65.62,
+     0.571
+    ],
+    [
+     224.35,
+     -73.68,
+     4.507
+    ],
+    [
+     235.62,
+     -68.82,
+     3.742
+    ],
+    [
+     234.69,
+     -64.03,
+     1.149
+    ],
+    [
+     236.48,
+     -64.24,
+     4.011
+    ],
+    [
+     225.41,
+     -79.58,
+     6.282
+    ]
+   ],
+   [
+    [
+     237.15,
+     -24.42,
+     0.377
+    ],
+    [
+     236.23,
+     -20.74,
+     4.564
+    ],
+    [
+     227.67,
+     -29.73,
+     1.614
+    ],
+    [
+     229.03,
+     -26.41,
+     0.336
+    ],
+    [
+     232.07,
+     -21.61,
+     3.298
+    ],
+    [
+     239.97,
+     -17.67,
+     3.95
+    ],
+    [
+     229.2,
+     -29.36,
+     1.157
+    ],
+    [
+     235.88,
+     -27.37,
+     6.15
+    ],
+    [
+     239.01,
+     -18.74,
+     3.432
+    ],
+    [
+     236.0,
+     -28.51,
+     0.825
+    ],
+    [
+     230.68,
+     -27.32,
+     0.881
+    ],
+    [
+     235.61,
+     -16.28,
+     6.225
+    ],
+    [
+     225.54,
+     -30.16,
+     0.425
+    ],
+    [
+     233.81,
+     -19.41,
+     2.951
+    ],
+    [
+     234.69,
+     -22.71,
+     2.604
+    ]
+   ],
+   [
+    [
+     253.41,
+     -128.1,
+     6.126
+    ]
+   ],
+   [
+    [
+     157.43,
+     -25.56,
+     1.235
+    ],
+    [
+     150.19,
+     -22.14,
+     4.778
+    ],
+    [
+     146.15,
+     -18.43,
+     1.753
+    ],
+    [
+     144.09,
+     -19.17,
+     4.466
+    ],
+    [
+     156.27,
+     -21.42,
+     4.696
+    ],
+    [
+     146.75,
+     -16.8,
+     5.99
+    ],
+    [
+     150.43,
+     -27.83,
+     3.352
+    ],
+    [
+     153.69,
+     -24.88,
+     3.362
+    ],
+    [
+     158.5,
+     -21.79,
+     0.396
+    ]
+   ],
+   [
+    [
+     181.49,
+     -106.59,
+     3.186
+    ],
+    [
+     181.94,
+     -96.89,
+     4.922
+    ]
+   ],
+   [
+    [
+     233.83,
+     -128.36,
+     2.57
+    ],
+    [
+     234.58,
+     -129.05,
+     4.332
+    ]
+   ],
+   [
+    [
+     -5.07,
+     -107.11,
+     2.072
+    ]
+   ],
+   [
+    [
+     161.72,
+     -113.16,
+     4.314
+    ],
+    [
+     160.18,
+     -118.92,
+     2.061
+    ],
+    [
+     166.58,
+     -117.31,
+     3.803
+    ],
+    [
+     162.97,
+     -127.79,
+     0.281
+    ],
+    [
+     162.84,
+     -123.57,
+     0.19
+    ],
+    [
+     172.28,
+     -116.74,
+     1.673
+    ],
+    [
+     162.04,
+     -116.98,
+     2.066
+    ],
+    [
+     173.88,
+     -127.43,
+     2.41
+    ]
+   ],
+   [
+    [
+     159.45,
+     -125.26,
+     5.987
+    ],
+    [
+     158.41,
+     -123.03,
+     1.229
+    ],
+    [
+     149.82,
+     -116.73,
+     1.596
+    ],
+    [
+     148.66,
+     -114.47,
+     5.463
+    ],
+    [
+     157.01,
+     -113.07,
+     1.864
+    ],
+    [
+     159.3,
+     -121.76,
+     6.029
+    ]
+   ],
+   [
+    [
+     237.07,
+     -86.51,
+     2.956
+    ],
+    [
+     239.01,
+     -86.67,
+     1.077
+    ],
+    [
+     227.28,
+     -87.67,
+     5.613
+    ],
+    [
+     228.1,
+     -93.1,
+     1.585
+    ],
+    [
+     225.22,
+     -82.62,
+     0.927
+    ],
+    [
+     224.33,
+     -82.63,
+     0.247
+    ],
+    [
+     235.66,
+     -81.06,
+     5.534
+    ],
+    [
+     234.5,
+     -80.06,
+     1.542
+    ],
+    [
+     227.06,
+     -89.91,
+     4.962
+    ]
+   ],
+   [
+    [
+     162.55,
+     -110.58,
+     1.888
+    ],
+    [
+     168.65,
+     -98.43,
+     2.307
+    ],
+    [
+     162.35,
+     -109.56,
+     4.682
+    ],
+    [
+     167.36,
+     -109.45,
+     2.753
+    ],
+    [
+     172.88,
+     -111.81,
+     4.578
+    ],
+    [
+     162.04,
+     -97.62,
+     1.461
+    ],
+    [
+     167.5,
+     -101.56,
+     3.713
+    ],
+    [
+     161.93,
+     -103.94,
+     4.388
+    ],
+    [
+     171.71,
+     -106.49,
+     5.497
+    ],
+    [
+     165.0,
+     -98.71,
+     2.559
+    ],
+    [
+     163.56,
+     -108.88,
+     0.473
+    ],
+    [
+     171.96,
+     -104.78,
+     0.728
+    ]
+   ],
+   [
+    [
+     212.36,
+     -30.51,
+     0.649
+    ],
+    [
+     209.82,
+     -30.57,
+     2.097
+    ],
+    [
+     217.87,
+     -18.36,
+     5.828
+    ],
+    [
+     213.58,
+     -31.92,
+     1.819
+    ],
+    [
+     210.14,
+     -29.58,
+     1.793
+    ]
+   ],
+   [
+    [
+     250.23,
+     -114.52,
+     4.437
+    ],
+    [
+     246.9,
+     -118.53,
+     5.492
+    ],
+    [
+     240.81,
+     -123.25,
+     2.523
+    ],
+    [
+     242.43,
+     -122.4,
+     4.467
+    ],
+    [
+     240.8,
+     -114.2,
+     5.07
+    ],
+    [
+     248.5,
+     -116.36,
+     2.916
+    ],
+    [
+     240.3,
+     -119.01,
+     6.156
+    ]
+   ],
+   [
+    [
+     257.26,
+     -3.71,
+     4.659
+    ]
+   ],
+   [
+    [
+     174.35,
+     11.6,
+     4.695
+    ],
+    [
+     170.36,
+     11.25,
+     1.859
+    ],
+    [
+     166.59,
+     4.77,
+     2.464
+    ],
+    [
+     175.76,
+     13.96,
+     1.339
+    ],
+    [
+     171.86,
+     15.37,
+     2.86
+    ],
+    [
+     166.01,
+     3.82,
+     0.884
+    ],
+    [
+     162.77,
+     9.35,
+     1.751
+    ],
+    [
+     161.58,
+     12.94,
+     4.465
+    ]
+   ],
+   [
+    [
+     147.06,
+     -12.37,
+     3.45
+    ],
+    [
+     158.54,
+     -14.81,
+     3.46
+    ]
+   ],
+   [
+    [
+     151.67,
+     18.11,
+     1.419
+    ],
+    [
+     148.38,
+     17.4,
+     4.39
+    ]
+   ],
+   [
+    [
+     138.04,
+     -120.65,
+     2.198
+    ],
+    [
+     137.34,
+     -125.75,
+     5.341
+    ],
+    [
+     140.51,
+     -124.1,
+     4.157
+    ],
+    [
+     138.47,
+     -124.11,
+     2.133
+    ],
+    [
+     139.64,
+     -123.7,
+     1.46
+    ],
+    [
+     139.11,
+     -127.19,
+     3.797
+    ]
+   ],
+   [
+    [
+     57.67,
+     -35.47,
+     2.479
+    ],
+    [
+     59.1,
+     -39.83,
+     2.242
+    ],
+    [
+     59.46,
+     -42.59,
+     2.29
+    ],
+    [
+     59.19,
+     -38.68,
+     3.172
+    ]
+   ],
+   [
+    [
+     95.43,
+     17.4,
+     0.444
+    ]
+   ],
+   [
+    [
+     117.99,
+     10.85,
+     4.845
+    ],
+    [
+     115.11,
+     5.86,
+     4.307
+    ]
+   ],
+   [
+    [
+     175.08,
+     17.88,
+     3.83
+    ],
+    [
+     167.0,
+     18.53,
+     6.202
+    ],
+    [
+     165.12,
+     20.65,
+     0.937
+    ]
+   ],
+   [
+    [
+     169.89,
+     -130.09,
+     6.215
+    ],
+    [
+     166.81,
+     -128.95,
+     3.102
+    ],
+    [
+     169.12,
+     -131.4,
+     3.147
+    ]
+   ],
+   [
+    [
+     89.33,
+     -1.04,
+     6.201
+    ],
+    [
+     94.11,
+     -9.32,
+     3.172
+    ]
+   ],
+   [
+    [
+     219.97,
+     -95.9,
+     5.15
+    ],
+    [
+     218.42,
+     -89.26,
+     5.129
+    ],
+    [
+     210.59,
+     -85.56,
+     0.705
+    ],
+    [
+     209.4,
+     -95.02,
+     4.474
+    ],
+    [
+     218.03,
+     -91.35,
+     2.864
+    ],
+    [
+     214.67,
+     -95.86,
+     1.614
+    ],
+    [
+     213.41,
+     -81.75,
+     0.577
+    ],
+    [
+     221.17,
+     -80.15,
+     4.098
+    ],
+    [
+     217.01,
+     -90.38,
+     4.457
+    ],
+    [
+     222.6,
+     -84.08,
+     0.377
+    ],
+    [
+     212.82,
+     -84.68,
+     1.257
+    ],
+    [
+     208.48,
+     -89.88,
+     3.323
+    ]
+   ],
+   [
+    [
+     258.61,
+     -126.87,
+     6.172
+    ],
+    [
+     257.55,
+     -116.05,
+     3.107
+    ]
+   ],
+   [
+    [
+     75.01,
+     -2.1,
+     1.753
+    ],
+    [
+     78.04,
+     -12.98,
+     1.285
+    ],
+    [
+     77.18,
+     -9.98,
+     2.993
+    ]
+   ],
+   [
+    [
+     56.3,
+     -27.92,
+     3.658
+    ],
+    [
+     57.6,
+     -28.1,
+     0.233
+    ],
+    [
+     57.62,
+     -30.49,
+     4.948
+    ]
+   ],
+   [
+    [
+     256.83,
+     -54.63,
+     3.001
+    ],
+    [
+     256.26,
+     -60.02,
+     0.509
+    ],
+    [
+     260.52,
+     -53.07,
+     1.444
+    ],
+    [
+     257.44,
+     -51.16,
+     5.357
+    ],
+    [
+     258.46,
+     -57.25,
+     0.492
+    ],
+    [
+     259.7,
+     -54.7,
+     1.936
+    ]
+   ],
+   [
+    [
+     77.91,
+     -80.44,
+     3.97
+    ]
+   ],
+   [
+    [
+     7.11,
+     -120.96,
+     3.0
+    ]
+   ],
+   [
+    [
+     117.22,
+     -89.5,
+     4.481
+    ],
+    [
+     115.03,
+     -91.06,
+     0.953
+    ],
+    [
+     113.06,
+     -95.92,
+     4.414
+    ],
+    [
+     113.53,
+     -83.77,
+     4.759
+    ]
+   ],
+   [
+    [
+     -30.6,
+     -93.74,
+     2.36
+    ],
+    [
+     -16.3,
+     -88.85,
+     2.621
+    ]
+   ],
+   [
+    [
+     179.66,
+     -128.12,
+     5.586
+    ]
+   ],
+   [
+    [
+     -18.19,
+     -69.39,
+     3.817
+    ]
+   ],
+   [
+    [
+     251.56,
+     0.66,
+     2.368
+    ]
+   ]
+  ],
+  "ordinaryCrowd": [
+   [
+    -1.25,
+    -44.18,
+    3.237
+   ],
+   [
+    -128.98,
+    73.38,
+    4.646
+   ],
+   [
+    -131.65,
+    -219.54,
+    1.512
+   ],
+   [
+    174.34,
+    -67.92,
+    2.766
+   ],
+   [
+    268.55,
+    -153.73,
+    5.605
+   ],
+   [
+    163.72,
+    64.63,
+    3.756
+   ],
+   [
+    66.56,
+    207.03,
+    4.532
+   ],
+   [
+    10.36,
+    -42.3,
+    4.586
+   ],
+   [
+    52.37,
+    -143.7,
+    1.654
+   ],
+   [
+    220.42,
+    20.17,
+    2.703
+   ],
+   [
+    -198.61,
+    -24.01,
+    3.665
+   ],
+   [
+    255.74,
+    238.35,
+    4.836
+   ],
+   [
+    -224.35,
+    210.69,
+    6.183
+   ],
+   [
+    -137.68,
+    -140.74,
+    2.155
+   ],
+   [
+    -80.06,
+    -31.7,
+    2.936
+   ],
+   [
+    -55.04,
+    -177.68,
+    2.818
+   ],
+   [
+    -150.37,
+    84.84,
+    2.247
+   ],
+   [
+    16.58,
+    -53.75,
+    5.074
+   ],
+   [
+    116.48,
+    276.63,
+    1.666
+   ],
+   [
+    181.77,
+    237.16,
+    2.788
+   ],
+   [
+    -70.88,
+    70.15,
+    2.712
+   ],
+   [
+    71.67,
+    -28.8,
+    2.707
+   ],
+   [
+    -25.95,
+    -120.21,
+    0.952
+   ],
+   [
+    282.16,
+    199.06,
+    0.979
+   ],
+   [
+    219.75,
+    50.39,
+    4.357
+   ],
+   [
+    72.59,
+    164.83,
+    4.548
+   ],
+   [
+    -72.05,
+    -13.77,
+    1.441
+   ],
+   [
+    245.59,
+    -192.15,
+    5.112
+   ],
+   [
+    255.96,
+    -157.66,
+    5.463
+   ],
+   [
+    247.1,
+    -196.21,
+    4.931
+   ],
+   [
+    -101.2,
+    178.63,
+    4.298
+   ],
+   [
+    5.96,
+    -88.86,
+    1.803
+   ],
+   [
+    7.19,
+    -79.85,
+    6.234
+   ],
+   [
+    -280.59,
+    -149.97,
+    1.741
+   ],
+   [
+    158.07,
+    -146.93,
+    1.393
+   ],
+   [
+    -38.45,
+    -109.27,
+    2.495
+   ],
+   [
+    127.08,
+    -9.08,
+    1.698
+   ],
+   [
+    200.06,
+    13.16,
+    4.886
+   ],
+   [
+    -158.17,
+    -149.7,
+    4.371
+   ],
+   [
+    -134.3,
+    -270.26,
+    0.157
+   ],
+   [
+    283.61,
+    -253.61,
+    2.046
+   ],
+   [
+    -62.84,
+    -2.16,
+    3.766
+   ],
+   [
+    -286.82,
+    187.41,
+    5.333
+   ],
+   [
+    -223.95,
+    197.64,
+    0.543
+   ],
+   [
+    -4.5,
+    -261.05,
+    5.319
+   ],
+   [
+    250.56,
+    89.56,
+    1.571
+   ],
+   [
+    -104.85,
+    157.26,
+    4.818
+   ],
+   [
+    -191.85,
+    -28.88,
+    3.575
+   ],
+   [
+    -185.54,
+    -60.64,
+    6.089
+   ],
+   [
+    -3.6,
+    -95.15,
+    5.288
+   ],
+   [
+    -114.2,
+    -148.14,
+    0.797
+   ],
+   [
+    -161.0,
+    -261.24,
+    0.038
+   ],
+   [
+    69.94,
+    179.97,
+    6.227
+   ],
+   [
+    72.66,
+    -152.14,
+    3.243
+   ],
+   [
+    208.59,
+    27.6,
+    0.859
+   ],
+   [
+    69.69,
+    -156.18,
+    4.998
+   ],
+   [
+    -144.13,
+    55.56,
+    4.045
+   ],
+   [
+    224.61,
+    19.51,
+    0.583
+   ],
+   [
+    217.57,
+    116.97,
+    4.677
+   ],
+   [
+    36.56,
+    -30.82,
+    1.597
+   ],
+   [
+    71.93,
+    173.29,
+    1.859
+   ],
+   [
+    10.33,
+    -57.93,
+    0.588
+   ],
+   [
+    116.34,
+    278.59,
+    1.79
+   ],
+   [
+    153.05,
+    239.24,
+    4.83
+   ],
+   [
+    -2.6,
+    32.75,
+    2.633
+   ],
+   [
+    -233.4,
+    -247.06,
+    6.044
+   ],
+   [
+    258.93,
+    -172.7,
+    2.63
+   ],
+   [
+    102.02,
+    -121.65,
+    0.062
+   ],
+   [
+    258.13,
+    230.6,
+    3.328
+   ],
+   [
+    232.34,
+    -256.38,
+    0.504
+   ],
+   [
+    -48.79,
+    -67.18,
+    3.342
+   ],
+   [
+    -40.49,
+    -22.39,
+    4.17
+   ],
+   [
+    -245.31,
+    136.17,
+    4.498
+   ],
+   [
+    -110.37,
+    -155.47,
+    5.939
+   ],
+   [
+    150.42,
+    -38.38,
+    3.66
+   ],
+   [
+    209.77,
+    -168.27,
+    6.242
+   ],
+   [
+    -269.54,
+    -4.38,
+    5.749
+   ],
+   [
+    -200.31,
+    187.55,
+    5.49
+   ],
+   [
+    -188.46,
+    44.27,
+    3.656
+   ],
+   [
+    158.45,
+    62.97,
+    5.781
+   ]
+  ],
+  "parkedCars": [
+   [
+    232.13,
+    294.21,
+    3.052,
+    2
+   ],
+   [
+    35.82,
+    234.77,
+    1.65,
+    4
+   ],
+   [
+    285.37,
+    73.37,
+    2.982,
+    4
+   ],
+   [
+    -13.13,
+    179.22,
+    -1.57,
+    1
+   ],
+   [
+    27.15,
+    201.26,
+    -1.57,
+    1
+   ],
+   [
+    220.07,
+    282.84,
+    3.052,
+    0
+   ],
+   [
+    25.68,
+    245.0,
+    1.65,
+    1
+   ],
+   [
+    -3.85,
+    201.23,
+    -1.57,
+    1
+   ],
+   [
+    -5.22,
+    242.53,
+    1.65,
+    0
+   ],
+   [
+    -33.03,
+    240.32,
+    1.65,
+    0
+   ],
+   [
+    271.07,
+    53.69,
+    2.982,
+    3
+   ],
+   [
+    11.66,
+    190.24,
+    -1.57,
+    0
+   ],
+   [
+    11.98,
+    221.83,
+    1.65,
+    1
+   ],
+   [
+    15.53,
+    255.22,
+    1.65,
+    4
+   ],
+   [
+    252.39,
+    273.73,
+    3.052,
+    0
+   ],
+   [
+    196.23,
+    263.19,
+    3.052,
+    3
+   ],
+   [
+    -22.42,
+    263.23,
+    1.65,
+    1
+   ],
+   [
+    16.41,
+    244.26,
+    1.65,
+    2
+   ],
+   [
+    39.55,
+    201.27,
+    -1.57,
+    2
+   ],
+   [
+    283.9,
+    64.19,
+    2.982,
+    0
+   ],
+   [
+    275.49,
+    81.24,
+    2.982,
+    0
+   ],
+   [
+    228.27,
+    250.99,
+    3.052,
+    3
+   ],
+   [
+    -9.19,
+    253.25,
+    1.65,
+    0
+   ],
+   [
+    -19.8,
+    230.34,
+    1.65,
+    4
+   ],
+   [
+    5.45,
+    201.24,
+    -1.57,
+    1
+   ],
+   [
+    207.74,
+    268.38,
+    3.052,
+    3
+   ],
+   [
+    253.49,
+    286.08,
+    3.052,
+    2
+   ],
+   [
+    252.94,
+    279.9,
+    3.052,
+    0
+   ],
+   [
+    5.8,
+    221.34,
+    1.65,
+    0
+   ],
+   [
+    6.26,
+    254.48,
+    1.65,
+    3
+   ],
+   [
+    -0.79,
+    264.96,
+    1.65,
+    3
+   ],
+   [
+    24.07,
+    179.26,
+    -1.57,
+    3
+   ],
+   [
+    30.99,
+    256.46,
+    1.65,
+    1
+   ],
+   [
+    18.62,
+    255.47,
+    1.65,
+    4
+   ],
+   [
+    293.29,
+    -272.0,
+    1.571,
+    0
+   ],
+   [
+    -22.45,
+    201.21,
+    -1.57,
+    2
+   ],
+   [
+    219.52,
+    276.67,
+    3.052,
+    4
+   ],
+   [
+    -1.26,
+    231.81,
+    1.65,
+    4
+   ],
+   [
+    279.97,
+    39.7,
+    2.982,
+    1
+   ],
+   [
+    -22.89,
+    230.09,
+    1.65,
+    2
+   ],
+   [
+    249.35,
+    239.76,
+    3.052,
+    3
+   ],
+   [
+    207.46,
+    265.3,
+    3.052,
+    3
+   ],
+   [
+    209.67,
+    290.0,
+    3.052,
+    3
+   ],
+   [
+    275.98,
+    84.3,
+    2.982,
+    3
+   ],
+   [
+    -10.04,
+    190.22,
+    -1.57,
+    3
+   ],
+   [
+    253.77,
+    289.16,
+    3.052,
+    4
+   ],
+   [
+    228.82,
+    257.16,
+    3.052,
+    3
+   ],
+   [
+    280.89,
+    -272.0,
+    1.571,
+    2
+   ],
+   [
+    286.84,
+    82.55,
+    2.982,
+    3
+   ],
+   [
+    198.71,
+    290.98,
+    3.052,
+    3
+   ],
+   [
+    196.5,
+    266.28,
+    3.052,
+    2
+   ],
+   [
+    -13.14,
+    190.22,
+    -1.57,
+    0
+   ],
+   [
+    20.37,
+    233.54,
+    1.65,
+    0
+   ],
+   [
+    239.22,
+    250.01,
+    3.052,
+    2
+   ],
+   [
+    197.88,
+    281.72,
+    3.052,
+    3
+   ],
+   [
+    265.39,
+    -294.0,
+    1.571,
+    1
+   ],
+   [
+    39.57,
+    179.27,
+    -1.57,
+    1
+   ],
+   [
+    -16.24,
+    190.21,
+    -1.57,
+    0
+   ],
+   [
+    281.93,
+    51.94,
+    2.982,
+    1
+   ],
+   [
+    20.97,
+    179.25,
+    -1.57,
+    2
+   ],
+   [
+    272.05,
+    59.81,
+    2.982,
+    4
+   ],
+   [
+    195.12,
+    250.84,
+    3.052,
+    1
+   ],
+   [
+    7.14,
+    243.52,
+    1.65,
+    3
+   ],
+   [
+    274.69,
+    -294.0,
+    1.571,
+    0
+   ],
+   [
+    218.42,
+    264.32,
+    3.052,
+    0
+   ],
+   [
+    241.43,
+    274.71,
+    3.052,
+    3
+   ],
+   [
+    249.07,
+    236.67,
+    3.052,
+    3
+   ],
+   [
+    -0.74,
+    190.23,
+    -1.57,
+    2
+   ],
+   [
+    251.28,
+    261.38,
+    3.052,
+    0
+   ],
+   [
+    12.44,
+    254.98,
+    1.65,
+    4
+   ]
+  ],
+  "bikeRacks": [
+   [
+    246.54,
+    55.29,
+    0
+   ],
+   [
+    -98.0,
+    -70.0,
+    0
+   ],
+   [
+    21.21,
+    14.85,
+    0
+   ],
+   [
+    -28.0,
+    -30.0,
+    0
+   ],
+   [
+    84.0,
+    -128.0,
+    0
+   ]
+  ],
+  "flagpoles": [
+   [
+    -13,
+    -100,
+    14,
+    "us"
+   ],
+   [
+    155,
+    -78,
+    8,
+    "college"
+   ]
+  ],
+  "eventId": "gameday",
+  "trafficCapacity": 210,
+  "wind": 1
+ },
+ "terrain": {
+  "contours": true,
+  "contour": 1
+ },
+ "ground": {
+  "base": "lawn",
+  "foundation": {
+   "gap": 1.9
+  },
+  "relief": 7,
+  "works": [
+   {
+    "name": "Student Union, Grove front",
+    "frame": {
+     "o": [
+      28.2,
+      9
+     ],
+     "to": [
+      81,
+      45.4
+     ]
+    },
+    "items": [
+     {
+      "k": "pave",
+      "mat": "panel",
+      "size": 1.5,
+      "colour": "#ddd5c2",
+      "p": [
+       [
+        -6,
+        0
+       ],
+       [
+        70,
+        0
+       ],
+       [
+        74,
+        6
+       ],
+       [
+        70,
+        18
+       ],
+       [
+        40,
+        21
+       ],
+       [
+        4,
+        18.5
+       ],
+       [
+        -6,
+        10
+       ]
+      ]
+     },
+     {
+      "k": "pave",
+      "mat": "paver",
+      "colour": "#b9ab95",
+      "r": [
+       5,
+       5.6,
+       59,
+       9.6
+      ]
+     },
+     {
+      "k": "steps",
+      "r": [
+       4,
+       0,
+       60,
+       2.6
+      ],
+      "floor": "w187869327",
+      "seg": 7
+     },
+     {
+      "k": "planter",
+      "r": [
+       7.8,
+       6.4,
+       10.2,
+       8.8
+      ],
+      "tree": true,
+      "h": 0.5
+     },
+     {
+      "k": "planter",
+      "r": [
+       16.8,
+       6.4,
+       19.2,
+       8.8
+      ],
+      "tree": true,
+      "h": 0.5
+     },
+     {
+      "k": "planter",
+      "r": [
+       25.8,
+       6.4,
+       28.2,
+       8.8
+      ],
+      "tree": true,
+      "h": 0.5
+     },
+     {
+      "k": "planter",
+      "r": [
+       34.8,
+       6.4,
+       37.2,
+       8.8
+      ],
+      "tree": true,
+      "h": 0.5
+     },
+     {
+      "k": "planter",
+      "r": [
+       44.8,
+       6.4,
+       47.2,
+       8.8
+      ],
+      "tree": true,
+      "h": 0.5
+     },
+     {
+      "k": "planter",
+      "r": [
+       53.8,
+       6.4,
+       56.2,
+       8.8
+      ],
+      "tree": true,
+      "h": 0.5
+     },
+     {
+      "k": "bench",
+      "at": [
+       13.5,
+       7.7
+      ]
+     },
+     {
+      "k": "bench",
+      "at": [
+       22.5,
+       7.7
+      ]
+     },
+     {
+      "k": "bench",
+      "at": [
+       31.5,
+       7.7
+      ]
+     },
+     {
+      "k": "bench",
+      "at": [
+       41,
+       7.7
+      ]
+     },
+     {
+      "k": "bench",
+      "at": [
+       50.5,
+       7.7
+      ]
+     },
+     {
+      "k": "planter",
+      "r": [
+       2,
+       18.4,
+       38,
+       20.2
+      ],
+      "h": 0.55
+     },
+     {
+      "k": "bed",
+      "p": [
+       [
+        42,
+        13
+       ],
+       [
+        68,
+        9.5
+       ],
+       [
+        70,
+        18
+       ],
+       [
+        42,
+        20.6
+       ]
+      ],
+      "plants": "shrub",
+      "gap": 1.7
+     },
+     {
+      "k": "lamp",
+      "at": [
+       4,
+       16
+      ]
+     },
+     {
+      "k": "lamp",
+      "at": [
+       30,
+       16.4
+      ]
+     },
+     {
+      "k": "lamp",
+      "at": [
+       40.4,
+       11
+      ]
+     },
+     {
+      "k": "lamp",
+      "at": [
+       66,
+       6
+      ]
+     },
+     {
+      "k": "bin",
+      "at": [
+       39.6,
+       16
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Student Union, north-east front",
+    "frame": {
+     "o": [
+      81,
+      45.4
+     ],
+     "to": [
+      48.9,
+      91.6
+     ]
+    },
+    "items": [
+     {
+      "k": "pave",
+      "mat": "panel",
+      "size": 1.5,
+      "colour": "#ddd5c2",
+      "r": [
+       -2,
+       0,
+       46,
+       9
+      ]
+     },
+     {
+      "k": "steps",
+      "r": [
+       3,
+       0,
+       40,
+       2.4
+      ],
+      "floor": "w187869327",
+      "seg": 7
+     },
+     {
+      "k": "bench",
+      "at": [
+       12,
+       6.4
+      ]
+     },
+     {
+      "k": "bench",
+      "at": [
+       30,
+       6.4
+      ]
+     },
+     {
+      "k": "lamp",
+      "at": [
+       21,
+       8
+      ]
+     },
+     {
+      "k": "bed",
+      "r": [
+       41,
+       1,
+       53,
+       7.5
+      ],
+      "plants": "shrub"
+     }
+    ]
+   },
+   {
+    "name": "Walk of Champions",
+    "items": [
+     {
+      "k": "pave",
+      "mat": "brick",
+      "turn": 45,
+      "w": 4.2,
+      "line": [
+       [
+        76,
+        22
+       ],
+       [
+        88,
+        22
+       ],
+       [
+        100,
+        16
+       ],
+       [
+        110,
+        6
+       ],
+       [
+        117,
+        -8
+       ],
+       [
+        121,
+        -24
+       ],
+       [
+        123,
+        -40
+       ]
+      ]
+     },
+     {
+      "k": "arch",
+      "at": [
+       104,
+       12
+      ],
+      "a": 45,
+      "span": 4.8
+     },
+     {
+      "k": "lamp",
+      "at": [
+       94,
+       24.5
+      ]
+     },
+     {
+      "k": "lamp",
+      "at": [
+       116,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Lamar Hall forecourt",
+    "frame": {
+     "o": [
+      300.6,
+      36.1
+     ],
+     "to": [
+      323.7,
+      19.8
+     ]
+    },
+    "items": [
+     {
+      "k": "pave",
+      "mat": "panel",
+      "size": 3,
+      "colour": "#d6cdb8",
+      "p": [
+       [
+        -12,
+        5
+       ],
+       [
+        40,
+        5
+       ],
+       [
+        40,
+        30
+       ],
+       [
+        26,
+        36
+       ],
+       [
+        -4,
+        36
+       ],
+       [
+        -12,
+        28
+       ]
+      ]
+     },
+     {
+      "k": "pave",
+      "mat": "panel",
+      "size": 3,
+      "colour": "#e7e0d0",
+      "r": [
+       9,
+       0,
+       19,
+       36
+      ]
+     },
+     {
+      "k": "bed",
+      "r": [
+       -6,
+       0.6,
+       8.4,
+       6.5
+      ],
+      "plants": "shrub",
+      "gap": 1.6
+     },
+     {
+      "k": "bed",
+      "r": [
+       19.6,
+       0.6,
+       33,
+       6.5
+      ],
+      "plants": "shrub",
+      "gap": 1.6
+     },
+     {
+      "k": "bed",
+      "r": [
+       0.5,
+       8,
+       8.6,
+       12.6
+      ],
+      "plants": "low",
+      "gap": 2.3
+     },
+     {
+      "k": "sign",
+      "at": [
+       4.6,
+       10.3
+      ],
+      "w": 1.6
+     },
+     {
+      "k": "bikes",
+      "at": [
+       14,
+       9.6
+      ],
+      "n": 5,
+      "parked": 2
+     },
+     {
+      "k": "bin",
+      "at": [
+       20.4,
+       8
+      ]
+     },
+     {
+      "k": "bed",
+      "p": [
+       [
+        22.2,
+        9
+       ],
+       [
+        38,
+        9
+       ],
+       [
+        40,
+        26
+       ],
+       [
+        30,
+        27
+       ]
+      ],
+      "plants": "low",
+      "gap": 2
+     },
+     {
+      "k": "bollards",
+      "line": [
+       [
+        21.6,
+        8.6
+       ],
+       [
+        21.6,
+        14
+       ],
+       [
+        29,
+        27.6
+       ]
+      ],
+      "gap": 2.3
+     },
+     {
+      "k": "bed",
+      "p": [
+       [
+        -12,
+        8
+       ],
+       [
+        -1.5,
+        8
+       ],
+       [
+        -1.5,
+        22
+       ],
+       [
+        -12,
+        26
+       ]
+      ],
+      "plants": "low",
+      "gap": 2.4
+     },
+     {
+      "k": "lamp",
+      "at": [
+       -3,
+       31
+      ],
+      "twin": false
+     },
+     {
+      "k": "lamp",
+      "at": [
+       30,
+       32
+      ],
+      "twin": false
+     }
+    ]
+   }
+  ]
+ }
+}

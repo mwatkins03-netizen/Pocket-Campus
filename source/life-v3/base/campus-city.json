@@ -1,0 +1,719 @@
+{
+  "name": "Ole Miss",
+  "title": "University of Mississippi \u00b7 Historic Core",
+  "region": "Oxford / University of Mississippi",
+  "place": "The Lyceum \u00b7 The Circle \u00b7 The Grove",
+  "timezone": "America/Chicago",
+  "level": 3.5,
+  "styles": {
+    "default": {
+      "facade": "brick",
+      "wall": [
+        "#b0785b",
+        "#b68063",
+        "#ac6d51"
+      ],
+      "levels": 3,
+      "floor": 4,
+      "roof": "hipped",
+      "flatRoof": "#9c9f94",
+      "parapet": 0.6,
+      "rooftop": "none",
+      "shop": "none",
+      "bay": 3.8,
+      "trim": "#e5dfca",
+      "glass": [
+        "#9aaead",
+        "#a2b6b5"
+      ],
+      "awning": false,
+      "awnings": [
+        "#425d50",
+        "#a96350",
+        "#e6d5ac"
+      ],
+      "pitch": 22,
+      "roofColour": [
+        "#7a847b",
+        "#7a817c",
+        "#7e8277"
+      ],
+      "maxSpan": 32,
+      "rectFill": 0.65,
+      "arch": "campus-sash",
+      "windowGlass": "#526561"
+    },
+    "rules": [
+      {
+        "if": {
+          "maxArea": 30
+        },
+        "set": {
+          "levels": 1,
+          "shop": "none"
+        }
+      }
+    ]
+  },
+  "palette": {
+    "ground": "#b2bf92",
+    "road": "#a6a5a0",
+    "pavement": "#ded5be",
+    "walk": "#d9c9ac",
+    "grass": "#a8bb87",
+    "slab": "#c9b797",
+    "marking": "#f2e9ce",
+    "kerb": "#d8caad",
+    "paving": "#bbac91"
+  },
+  "paving": {
+    "style": "slabs",
+    "size": 0.65,
+    "colour": "#c5b89f"
+  },
+  "lamp": {
+    "colour": "#405b4b",
+    "height": 4.8,
+    "head": "#f2e3b6",
+    "auto": true
+  },
+  "shops": {
+    "signs": [
+      "BOOKS",
+      "COFFEE",
+      "GALLERY",
+      "DINER"
+    ],
+    "font": "Georgia,serif",
+    "fascias": [
+      "#39594f",
+      "#9f5948",
+      "#eee2c9"
+    ],
+    "awnings": [
+      "#49604b",
+      "#ad7560"
+    ]
+  },
+  "cafes": {
+    "umbrellas": [
+      "#e7dfc9",
+      "#46614f"
+    ],
+    "stripes": false,
+    "table": "#e3d1a8",
+    "chair": "#726045"
+  },
+  "trees": {
+    "default": {
+      "style": 3,
+      "colours": [
+        "#82966e",
+        "#a6b680",
+        "#91a477"
+      ],
+      "height": 11,
+      "autumn": "#bb8b52"
+    },
+    "rules": [
+      {
+        "match": "Park tree|Garden tree|Woodland",
+        "vary": 0.3,
+        "mix": [
+          {
+            "style": 3,
+            "height": 12,
+            "share": 7
+          },
+          {
+            "style": 3,
+            "height": 10,
+            "evergreen": true,
+            "colours": [
+              "#557e65"
+            ],
+            "share": 2
+          },
+          {
+            "style": 5,
+            "height": 12,
+            "evergreen": true,
+            "share": 1
+          }
+        ]
+      }
+    ]
+  },
+  "people": {
+    "skin": [
+      "#e7bb96",
+      "#b98260",
+      "#7a5140",
+      "#cf9c75"
+    ],
+    "clothes": [
+      "#a7524c",
+      "#49647b",
+      "#ece2cf",
+      "#577b85",
+      "#caad7f"
+    ],
+    "pants": [
+      "#555a63",
+      "#526276",
+      "#a39b82"
+    ],
+    "hair": [
+      "#433b31",
+      "#806349",
+      "#c2a379"
+    ],
+    "umbrellas": [
+      "#ac5b50",
+      "#435e70"
+    ]
+  },
+  "vehicles": {
+    "kinds": [
+      "sedan",
+      "hatch",
+      "mpv"
+    ],
+    "colours": [
+      "#e6e2d8",
+      "#8a969b",
+      "#3e5263",
+      "#ad6757",
+      "#b9b8ad"
+    ],
+    "plate": "#f4edda",
+    "taxi": {
+      "share": 0
+    }
+  },
+  "seasons": [
+    {
+      "id": "spring",
+      "label": "Spring",
+      "leaves": "spring",
+      "grass": "#adbf87",
+      "note": {
+        "text": "Mississippi\u2019s spring brings a heightened threat of thunderstorms.",
+        "source": "Mississippi State Climatologist",
+        "url": "https://www.geosciences.msstate.edu/state-climatologist/mississippi-climate"
+      }
+    },
+    {
+      "id": "summer",
+      "label": "Summer",
+      "leaves": "summer",
+      "haze": true,
+      "grass": "#9aaf7a",
+      "note": {
+        "text": "Mississippi has long, hot summers and high humidity.",
+        "source": "Mississippi State Climatologist",
+        "url": "https://www.geosciences.msstate.edu/state-climatologist/mississippi-climate"
+      }
+    },
+    {
+      "id": "autumn",
+      "label": "Autumn",
+      "leaves": "autumn",
+      "grass": "#b6b284",
+      "note": {
+        "text": "The Grove\u2019s canopy includes oaks, magnolias, and elms.",
+        "source": "The Cultural Landscape Foundation",
+        "url": "https://www.tclf.org/university-mississippi"
+      }
+    },
+    {
+      "id": "winter",
+      "label": "Winter",
+      "leaves": "bare",
+      "coats": true,
+      "cafes": false,
+      "note": {
+        "text": "Mississippi winters are temperate, with cold spells generally short.",
+        "source": "Mississippi State Climatologist",
+        "url": "https://www.geosciences.msstate.edu/state-climatologist/mississippi-climate"
+      }
+    }
+  ],
+  "months": [
+    "winter",
+    "winter",
+    "spring",
+    "spring",
+    "spring",
+    "summer",
+    "summer",
+    "summer",
+    "autumn",
+    "autumn",
+    "autumn",
+    "winter"
+  ],
+  "notes": [
+    {
+      "title": "Campus extent",
+      "text": "A 600 m square of the historic core and Grove. The stadium, western campus, and outlying university properties are beyond this scene.",
+      "links": [
+        {
+          "label": "Campus landscape",
+          "url": "https://www.tclf.org/university-mississippi"
+        }
+      ]
+    },
+    {
+      "title": "Landmark studies",
+      "text": "Custom models of the Lyceum, Circle halls, observatories, and Fulton Chapel use mapped footprints and published descriptions. Details and heights without measurements are interpreted.",
+      "links": [
+        {
+          "label": "Historic district survey",
+          "url": "https://www.apps.mdah.ms.gov/nom/dist/200.pdf"
+        },
+        {
+          "label": "University buildings",
+          "url": "https://catalog.olemiss.edu/university/buildings.pdf"
+        }
+      ]
+    },
+    {
+      "title": "A place in civil rights history",
+      "text": "James Meredith\u2019s enrollment in 1962 is central to the historic district\u2019s significance. The scene depicts everyday campus life.",
+      "links": [
+        {
+          "label": "MDAH district history",
+          "url": "https://www.apps.mdah.ms.gov/Public/district.aspx?id=200&view=facts"
+        }
+      ]
+    },
+    {
+      "title": "Measured and illustrative",
+      "text": "50 mapped building footprints and mapped streets/paths; 45 buildings lack mapped heights. Colours, fa\u00e7ade details, trees, furniture, weather, people, and trips are illustrative. Special scenes evoke events rather than reproduce a particular date.",
+      "links": [
+        {
+          "label": "OpenStreetMap data license",
+          "url": "https://www.openstreetmap.org/copyright"
+        },
+        {
+          "label": "Climate",
+          "url": "https://www.geosciences.msstate.edu/state-climatologist/mississippi-climate"
+        },
+        {
+          "label": "Tree context",
+          "url": "https://www.tclf.org/university-mississippi"
+        }
+      ]
+    },
+    {
+      "title": "Explore the wider campus",
+      "text": "Use the campus-wide atlas for searchable main-campus buildings, playing fields, and streets beyond the miniature.",
+      "links": [
+        {
+          "label": "Campus-wide map",
+          "url": "campus-overview.html"
+        }
+      ]
+    },
+    {
+      "title": "Architectural detail pass",
+      "text": "Fa\u00e7ades now distinguish arched and sash windows, stone lintels, cornices, gallery railings, column orders, and roof forms. Main elevations were compared with photographs. Minor dimensions and unseen elevations remain interpreted.",
+      "links": [
+        {
+          "label": "County courthouse photograph",
+          "url": "https://lafayettems.com/places/lafayette-county-courthouse/"
+        },
+        {
+          "label": "University building photographs",
+          "url": "https://www.university-grounds.com/home/university-of-mississippi"
+        },
+        {
+          "label": "Brevard restoration",
+          "url": "https://www.mccartycompany.com/projects/brevard-hall"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "label": "OpenStreetMap contributors \u00b7 ODbL",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "label": "Pocket City \u00b7 April Zhu \u00b7 MIT",
+      "url": "https://april-zhu.com/pocketcity/"
+    }
+  ],
+  "cameras": {
+    "iso": {
+      "x": 0,
+      "y": 0,
+      "yaw": -30,
+      "pitch": 40,
+      "zoom": 0.31,
+      "z": 4
+    }
+  },
+  "views": [
+    {
+      "id": "chapel",
+      "label": "Fulton Chapel",
+      "camera": {
+        "x": -52.6,
+        "y": 35.2,
+        "z": 5,
+        "yaw": -90,
+        "pitch": 28,
+        "zoom": 1.5
+      }
+    },
+    {
+      "id": "peabody",
+      "label": "Peabody Hall",
+      "camera": {
+        "x": -95,
+        "y": -16,
+        "zoom": 1.9,
+        "yaw": -55,
+        "pitch": 28,
+        "z": 5
+      }
+    },
+    {
+      "id": "bryant",
+      "label": "Bryant Hall",
+      "camera": {
+        "x": -16,
+        "y": -6,
+        "zoom": 1.7,
+        "yaw": -70,
+        "pitch": 28,
+        "z": 5
+      }
+    },
+    {
+      "id": "observatory",
+      "label": "Kennon Observatory",
+      "camera": {
+        "x": -163,
+        "y": -227,
+        "yaw": -25,
+        "pitch": 32,
+        "zoom": 1.55,
+        "z": 5
+      }
+    },
+    {
+      "id": "ventress",
+      "label": "Ventress Hall",
+      "camera": {
+        "x": 93,
+        "y": -100,
+        "yaw": -90,
+        "pitch": 26,
+        "zoom": 2.6,
+        "z": 7
+      }
+    },
+    {
+      "id": "grove",
+      "label": "The Grove",
+      "camera": {
+        "x": 160,
+        "y": -45,
+        "yaw": -25,
+        "pitch": 32,
+        "zoom": 0.65,
+        "z": 5
+      }
+    },
+    {
+      "id": "circle",
+      "label": "The Circle",
+      "camera": {
+        "x": -10,
+        "y": -103,
+        "yaw": -25,
+        "pitch": 32,
+        "zoom": 0.68,
+        "z": 5
+      }
+    },
+    {
+      "id": "lyceum",
+      "label": "The Lyceum",
+      "camera": {
+        "x": -125,
+        "y": -98,
+        "yaw": -20,
+        "pitch": 27,
+        "zoom": 1.5,
+        "z": 7
+      }
+    },
+    {
+      "id": "angle0",
+      "label": "View 1",
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "yaw": -30,
+        "pitch": 38,
+        "zoom": 0.31,
+        "z": 4
+      }
+    },
+    {
+      "id": "angle1",
+      "label": "View 2",
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "yaw": 30,
+        "pitch": 38,
+        "zoom": 0.31,
+        "z": 4
+      }
+    },
+    {
+      "id": "angle2",
+      "label": "View 3",
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "yaw": 90,
+        "pitch": 38,
+        "zoom": 0.31,
+        "z": 4
+      }
+    },
+    {
+      "id": "angle3",
+      "label": "View 4",
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "yaw": 150,
+        "pitch": 38,
+        "zoom": 0.31,
+        "z": 4
+      }
+    },
+    {
+      "id": "angle4",
+      "label": "View 5",
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "yaw": 210,
+        "pitch": 38,
+        "zoom": 0.31,
+        "z": 4
+      }
+    },
+    {
+      "id": "angle5",
+      "label": "View 6",
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "yaw": 270,
+        "pitch": 38,
+        "zoom": 0.31,
+        "z": 4
+      }
+    },
+    {
+      "id": "detailcheck0",
+      "label": "Review 0",
+      "camera": {
+        "x": -125,
+        "y": -98,
+        "zoom": 1.3,
+        "pitch": 33,
+        "yaw": -30,
+        "z": 6
+      }
+    },
+    {
+      "id": "detailcheck1",
+      "label": "Review 1",
+      "camera": {
+        "x": -125,
+        "y": -98,
+        "zoom": 1.3,
+        "pitch": 33,
+        "yaw": 30,
+        "z": 6
+      }
+    },
+    {
+      "id": "detailcheck2",
+      "label": "Review 2",
+      "camera": {
+        "x": -125,
+        "y": -98,
+        "zoom": 1.3,
+        "pitch": 33,
+        "yaw": 90,
+        "z": 6
+      }
+    },
+    {
+      "id": "detailcheck3",
+      "label": "Review 3",
+      "camera": {
+        "x": -125,
+        "y": -98,
+        "zoom": 1.3,
+        "pitch": 33,
+        "yaw": 150,
+        "z": 6
+      }
+    },
+    {
+      "id": "detailcheck4",
+      "label": "Review 4",
+      "camera": {
+        "x": -125,
+        "y": -98,
+        "zoom": 1.3,
+        "pitch": 33,
+        "yaw": 210,
+        "z": 6
+      }
+    },
+    {
+      "id": "detailcheck5",
+      "label": "Review 5",
+      "camera": {
+        "x": -125,
+        "y": -98,
+        "zoom": 1.3,
+        "pitch": 33,
+        "yaw": 270,
+        "z": 6
+      }
+    }
+  ],
+  "buildings": {
+    "w187869327": {
+      "roof": "flat",
+      "levels": 3,
+      "facade": "civic",
+      "arch": "modern-campus"
+    },
+    "w188498900": {
+      "levels": 4,
+      "roof": "flat",
+      "facade": "civic",
+      "arch": "campus-sash"
+    },
+    "w318276286": {
+      "levels": 2,
+      "roof": "flat",
+      "arch": "modern-campus"
+    },
+    "w313153529": {
+      "levels": 1,
+      "roof": "hipped",
+      "height": 4,
+      "arch": "campus-sash"
+    }
+  },
+  "occasions": [
+    {
+      "id": "gameday",
+      "label": "Grove gameday",
+      "leaves": "autumn",
+      "crowd": 1.7,
+      "dress": {
+        "colours": [
+          "#b54e4a",
+          "#35516d",
+          "#ece6d8"
+        ],
+        "share": 0.85
+      },
+      "note": {
+        "text": "The Walk of Champions passes through the Grove before home football games.",
+        "source": "Ole Miss Athletics",
+        "url": "https://olemisssports.com/sports/2018/7/20/trads-the-grove-html"
+      },
+      "traffic": false
+    }
+  ],
+  "legend": [
+    {
+      "name": "The Lyceum",
+      "source": "Landmark / mapped position",
+      "count": "",
+      "icon": "landmark",
+      "camera": {
+        "x": -125,
+        "y": -98,
+        "yaw": -20,
+        "pitch": 27,
+        "zoom": 1.5,
+        "z": 7
+      }
+    },
+    {
+      "name": "The Circle",
+      "source": "Landmark / mapped position",
+      "count": "",
+      "icon": "landmark",
+      "camera": {
+        "x": -10,
+        "y": -103,
+        "yaw": -25,
+        "pitch": 32,
+        "zoom": 0.68,
+        "z": 5
+      }
+    },
+    {
+      "name": "The Grove",
+      "source": "Landmark / mapped position",
+      "count": "",
+      "icon": "landmark",
+      "camera": {
+        "x": 160,
+        "y": -45,
+        "yaw": -25,
+        "pitch": 32,
+        "zoom": 0.65,
+        "z": 5
+      }
+    },
+    {
+      "name": "Ventress Hall",
+      "source": "Landmark / mapped position",
+      "count": "",
+      "icon": "landmark",
+      "camera": {
+        "x": 93,
+        "y": -100,
+        "yaw": -90,
+        "pitch": 26,
+        "zoom": 2.6,
+        "z": 7
+      }
+    },
+    {
+      "name": "Kennon Observatory",
+      "source": "Landmark / mapped position",
+      "count": "",
+      "icon": "landmark",
+      "camera": {
+        "x": -163,
+        "y": -227,
+        "yaw": -25,
+        "pitch": 32,
+        "zoom": 1.55,
+        "z": 5
+      }
+    }
+  ]
+}

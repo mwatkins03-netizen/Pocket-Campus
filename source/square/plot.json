@@ -1,0 +1,19 @@
+{
+ "lat": 34.3663739,
+ "lon": -89.5187108,
+ "rotation": -10,
+ "size": 300.0,
+ "asked": {
+  "lat": 34.3663857,
+  "lon": -89.5187912
+ },
+ "moved_m": 7.5,
+ "famous_inside": [
+  "Lafayette County Courthouse",
+  "The Lyric Oxford"
+ ],
+ "famous_cut": [],
+ "keep_missing": [],
+ "place": "Lafayette County Courthouse, Courthouse Square, The Dell, Oxford, Lafayette County, Mississippi, 38655, United States",
+ "osm_base": "2026-11-20T23:15:25Z"
+}

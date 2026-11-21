@@ -1,0 +1,12 @@
+from pathlib import Path
+K=Path('work/pocket-city/assets/kit')
+p=K/'city.js';s=p.read_text().replace('let WIND_LEVEL=1;','let WIND_LEVEL=1;let SCENE_STATS={};')
+s=s.replace('  for(const a of TRAFFIC.to(t)){','  const moving=TRAFFIC.to(t);SCENE_STATS.moving={car:0,bike:0,ped:0};for(const a of moving)SCENE_STATS.moving[a.kind]++;\n  for(const a of moving){')
+s=s.replace(' prepareStreetLife();const out=[];',' prepareStreetLife();SCENE_STATS.crowd=LIFE_CROWD.reduce((sum,g)=>sum+g.count,0);SCENE_STATS.wind=WIND_LEVEL;const out=[];')
+s=s.replace("LIFE_CROWD.push({fp,h:2.1,draw:","LIFE_CROWD.push({fp,h:2.1,count:crowd.length,draw:")
+p.write_text(s)
+p=K/'painter.js';s=p.read_text().replace('  FIG_W=m.width;FIG_H=m.height;', '  const renderStarted=performance.now();FIG_W=m.width;FIG_H=m.height;')
+s=s.replace('  return {angle:Math.atan2', '  return {stats:{...SCENE_STATS,time:m.time,renderMs:performance.now()-renderStarted},angle:Math.atan2');p.write_text(s)
+p=Path('work/pocket-city/assets/page.js');s=p.read_text().replace('  shown=frame.seq;const img=', '  window.__sceneDiagnostics={...(frame.stats||{}),seq:frame.seq};shown=frame.seq;const img=')
+s=s.replace("tool('↶'", "tool('Left'").replace("tool('↷'", "tool('Right'")
+p.write_text(s)
